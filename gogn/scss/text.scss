@@ -1,10 +1,13 @@
 .text {
   &__p {
-    margin-bottom: 20px;
-    margin-left: 2px;
-    background-color: blue;
+  //  color: red;
+  //background-color: green;
   }
-  &__head{
-    margin-left: 20px;
+  /* h1 fyrirsagnir */
+  &__header{
+    background-color: blue;
+    &__h1{
+      color: blue;
+    }
   }
 }
