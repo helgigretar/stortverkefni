@@ -1,6 +1,4 @@
 .text {
   /* h1 fyrirsagnir */ }
-  .text__header {
-    background-color: blue; }
-    .text__header__h1 {
-      color: blue; }
+  .text__header__h1 {
+    color: white; }
