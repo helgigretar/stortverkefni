@@ -1,0 +1,22 @@
+/* Þetta sass skjal sér um að stíla fyrirsagnirnar og er með Roboto Slab í font-family */
+.heading {
+
+  width: 100%;
+  padding: 0;
+  border: none;
+
+  font-family: 'Roboto Slab';
+  font-size: 2rem;
+
+  &--one {
+    font-size: 3rem;
+  }
+
+  &--two {
+    font-size: 2rem;
+  }
+
+  &--three {
+    font-size: 1.5rem;
+  }
+}

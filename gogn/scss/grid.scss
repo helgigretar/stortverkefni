@@ -1,3 +1,4 @@
+/* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +18,8 @@
   padding-left: $gutter / 2;
 
   &-12 {
-    @include columns(12){
+    @include columns(12);
+
   }
   &-8{
   @include columns(8);

@@ -1,38 +1,34 @@
-/* skipunin sem nær í google fonts */
-/* grunnhugsun fyrir html kodan */
-html {
-/*  box-sizing: border-box;*/
-  font-size: 16px;
-  font-family:'Open Sans', 'Roboto-Slap';
+/
 
 }
 
-/* styler fyrir forsíðumynd og stillir staðsetningu á mynd*/
+/*sér um myndina og textann sem er á myndinni*/
+/* style fyrir quote í about */
 header {
   width: 100%;
-  background-image: url('bg-subpage.jpg');
-   //background-attachment: fixed;
+  background-image: url("bg-subpage.jpg");
   background-size: cover;
   background-position: 50% 50%;
-  max-height: 100%;
   padding-top: 5em;
+  margin-bottom: 2em;
   min-height: 15em;
- }
- .texti{
-   font-family: 'Open Sans';
-   font-size: 1em;
-   padding-top: 1em;
+  color: white; }
 
- }
- /*styler fyrir texta í forsiðumynd */
- header h1{
-   color: white;
- }
- /* fyrsta fyrirsögnin */
- .title1{
-   font-family: 'Roboto Slab'
-   padding-top:1em;
+  .quote {
+    padding: 1.75em;
+    font-size: 1.5em;
+  }
 
- }
- @import "scss/grid";
- @import "scss/text";
+  /*style sem ýtir Alber Einstein aðeins til hægri */
+  .quote p {
+    margin-left: 13px;
+  }
+
+
+@import "scss/grid";
+@import "scss/header";
+@import "scss/heading";
+@import "scss/text";
+@import "scss/button";
+@import "scss/card";
+@import "scss/cardlist";

@@ -1,4 +1,147 @@
-.text {
-  /* h1 fyrirsagnir */ }
-  .text__header__h1 {
-    color: white; }
+@charset "UTF-8";
+/* setjum box-sizing: border-box; á allt */
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  /* stylelint-disable-line */
+  box-sizing: inherit;
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0; }
+
+html {
+  /* stylelint-disable-line */
+  margin-right: 20px;
+  margin-left: 20px; }
+  @media (min-width: 1200px) {
+    html {
+      margin: 0; } }
+
+img {
+  /* stylelint-disable-line */
+  max-width: 100%; }
+
+main {
+  /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+/*
+.myndtext{
+padding-left:10px;
+
+}
+*/
+/*sér um myndina og textann sem er á myndinni*/
+/* style fyrir quote í about */
+header {
+  width: 100%;
+  background-image: url("bg-subpage.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 5em;
+  margin-bottom: 2em;
+  min-height: 15em;
+  color: white; }
+
+.quote {
+  padding: 1.75em;
+  font-size: 1.5em; }
+
+/*style sem ýtir Alber Einstein aðeins til hægri */
+.quote p {
+  margin-left: 13px; }
+
+
+
+
+
+
+
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px; }
+
+.col {
+  padding-right: 10px;
+  padding-left: 10px; }
+  .col-12 {
+    width: 100%; }
+  .col-8 {
+    width: 66.66667%; }
+  .col-6 {
+    width: 50%; }
+  .col-4 {
+    width: 33.33333%; }
+  @media (max-width: 599px) {
+    .col-sm-12 {
+      width: 100%;
+      width: 100%; } }
+
+/* Þetta sass skjal sér um að stíla fyrirsagnirnar */
+.heading {
+  width: 100%;
+  padding: 0;
+  border: none;
+  font-family: 'Roboto Slab';
+  font-size: 2rem; }
+  .heading--one {
+    font-size: 3rem; }
+  .heading--two {
+    font-size: 2rem; }
+  .heading--three {
+    font-size: 1.5rem; }
+
+/* þetta sass skjal sér um að stíla meginmálið */
+.text__fyrirsogn {
+  line-height: 10px; }
+
+.text__p {
+  font-family: 'Open Sans';
+  margin-bottom: 20px;
+  margin-left: 2px; }
+
+.text__head {
+  margin-left: 20px; }
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 256px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #eee;
+  background-color: #666;
+
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer; }
+  .button:hover {
+    color: #eee;
+    background-color: #333; }
+  .button--inverted {
+    color: #666;
+    background-color: #eee; }
+  .button--inverted:hover {
+    color: #333;
+    background-color: #ccc; }
+  .button--disabled, .button--disabled:hover {
+    border-color: #eee;
+    color: #999;
+    background-color: #eee; }

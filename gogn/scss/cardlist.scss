@@ -1,0 +1,24 @@
+
+.cardlist {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -($gutter / 2);
+    margin-bottom: $gutter;
+    margin-left: -($gutter / 2);
+  }
+
+  & .card{
+    display: block;
+    height: 100%;
+  }
+  &__col{
+    padding: $gutter / 2;
+    @media(min-width: 800px){
+      width: 50%;
+    }
+    & .card__content{
+      align-items: center;
+    }
+  }
+}

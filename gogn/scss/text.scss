@@ -1,13 +1,16 @@
+/* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
 .text {
-  &__p {
-  //  color: red;
-  //background-color: green;
+  &__fyrirsogn{
+    line-height: 10px;
   }
-  /* h1 fyrirsagnir */
-  &__header{
-    background-color: blue;
-    &__h1{
-      color: white;
-    }
+
+  &__p {
+    font-family: 'Open Sans';
+    margin-bottom: 20px;
+    margin-left: 2px;
+
+  }
+  &__head{
+    margin-left: 20px;
   }
 }
