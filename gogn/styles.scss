@@ -91,46 +91,6 @@ header {
     }
     }
   }
-/* Þetta sass skjal sér um að stíla fyrirsagnirnar */
-
-.heading {
-  width: 100%;
-  padding: 0;
-  border: none;
-  font-family: 'Roboto Slab';
-  font-size: 2rem;
-}
-
-.heading--one {
-  font-size: 3rem;
-}
-
-.heading--two {
-  font-size: 2rem;
-}
-
-.heading--three {
-  font-size: 1.5rem;
-}
-
-/* þetta sass skjal sér um að stíla meginmálið */
-
-.text__fyrirsogn {
-  line-height: 10px;
-}
-
-.text__p {
-  font-family: 'Open Sans';
-  margin-bottom: 20px;
-  margin-left: 2px;
-}
-
-.text__head {
-  margin-left: 20px;
-}
-
-
-/*style sem ýtir Alber Einstein aðeins til hægri */
 
 .quote p {
   margin-left: 13px;
@@ -190,3 +150,4 @@ button:hover {
 @import "scss/Button";
 @import "scss/button";
 @import "scss/info";
+@import "scss/footer";
