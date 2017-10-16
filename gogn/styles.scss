@@ -1,33 +1,27 @@
-<<<<<<< HEAD
 
-
-=======
-$gutter: 20px;
->>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
+.quote {
+  padding: 1.75em;
+  font-size: 1.5em;
+}
 
+/*style sem ýtir Alber Einstein aðeins til hægri */
+.quote p {
+  margin-left: 13px;
+}
+.Navi {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  color: #FFFFFF;
+  position: sticky;
+  top:0;
+  opacity: 0.9;
+  z-index: 1;
+}
 
-  .quote {
-    padding: 1.75em;
-    font-size: 1.5em;
-  }
-
-  /*style sem ýtir Alber Einstein aðeins til hægri */
-  .quote p {
-    margin-left: 13px;
-  }
-  .Navi {
-      display: flex;
-      background-color: #333;
-      justify-content: space-between;
-      color: #FFFFFF;
-      position: sticky;
-      top:0;
-      opacity: 0.9;
-      z-index: 1;
-  }
-  @charset "UTF-8";
+@charset "UTF-8";
 /* setjum box-sizing: border-box; á allt */
 html {
   /* stylelint-disable-line */
@@ -79,7 +73,6 @@ header {
 
 .quote {
   padding: 1.75em;
-<<<<<<< HEAD
   font-size: 1.5em; }
 
 /*style sem ýtir Alber Einstein aðeins til hægri */
@@ -144,7 +137,6 @@ header {
 }
 
 */
-=======
   font-size: 1.5em;
 }
 
@@ -152,21 +144,15 @@ header {
 .quote p {
   margin-left: 13px;
 }
-
 /* INDEX CODE - Guðlaugur Kjartan Þorgeirsson */
 .bg-img {
-  //background-image: url("bg.jpg"); /* Header Mynd fyrir Forsíðu */
+  background-image: url("bg.jpg"); /* Header Mynd fyrir Forsíðu */
 }
->>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
-
 
 @import "scss/grid";
 @import "scss/heading";
 @import "scss/text";
-<<<<<<< HEAD
 @import "scss/card";
 @import "scss/NavigationBar";
 @import "scss/Button";
-=======
 @import "scss/button";
->>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246

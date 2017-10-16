@@ -1,5 +1,4 @@
 @charset "UTF-8";
-<<<<<<< HEAD
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 .quote {
@@ -57,13 +56,11 @@ padding-left:10px;
 
 }
 */
-=======
->>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 header {
   width: 100%;
-  background-image: url("bg-subpage.jpg");
+  /*background-image: url("bg-subpage.jpg");*/  
   background-size: cover;
   background-position: 50% 50%;
   padding-top: 5em;
