@@ -1,4 +1,5 @@
 @charset "UTF-8";
+<<<<<<< HEAD
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 .quote {
@@ -56,6 +57,8 @@ padding-left:10px;
 
 }
 */
+=======
+>>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 header {
@@ -77,6 +80,7 @@ header {
   margin-left: 13px;
   font-size: 18px; }
 
+<<<<<<< HEAD
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -140,6 +144,8 @@ header {
 }
 
 */
+=======
+>>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
 /* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
   display: flex;
@@ -189,8 +195,10 @@ header {
 
 .text__head {
   margin-left: 20px; }
+<<<<<<< HEAD
 
 .card {
+<<<<<<< HEAD
   width: 100%;
   min-width: 200px;
   max-width: 800px;
@@ -257,9 +265,13 @@ header {
   padding: 10px 5px;
   border: 1px solid #666;
   border-radius: 4px;
+=======
+>>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
   width: 100%;
-  max-width: 256px;
+  min-width: 200px;
+  max-width: 800px;
   overflow: hidden;
+<<<<<<< HEAD
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #eee;
@@ -282,3 +294,83 @@ header {
     border-color: #eee;
     color: #999;
     background-color: #eee; }
+=======
+  border-radius: 3px;
+  background-color: #eee;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); 
+}
+@media (min-width: 800px) {
+  .card {
+    display: flex; 
+  }
+}
+.card__heading {
+  margin-bottom: 15px;
+  width: 100%;
+  font-family: Merriweather, georgia, serif;
+  font-size: 1.5rem;
+  word-break: break-word; 
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px; }
+  @media (min-width: 800px) {
+    .card__content {
+      align-items: flex-start; 
+    } 
+  }
+.card__text {
+  margin-bottom: 30px; 
+}
+.card__img {
+  width: 100%;
+  min-width: 200px;
+  max-width: 100%; 
+}
+@media (min-width: 800px) {
+  .card__img {
+    height: 100%;
+    min-width: 400px;
+    object-fit: cover; 
+  }   
+}
+
+@media (min-width: 600px) {
+  .card--wide:hover {
+    background-color: #ddd;
+    transition: ease 500ms; 
+  } 
+}
+
+.cardlist__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px; 
+}
+
+.cardlist .card {
+  display: block;
+  height: 100%; 
+}
+
+.cardlist__col {
+  padding: 10px; 
+}
+
+@media (min-width: 599px) {
+  .cardlist__col {
+    width: 50%; 
+  } 
+}
+
+.cardlist__col .card__content {
+  align-items: center; 
+}
+
+=======
+>>>>>>> aed3d90ab3c0a08978177519f781217f8e77e72c
+>>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246

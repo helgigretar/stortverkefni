@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 
+=======
+$gutter: 20px;
+>>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 
@@ -64,16 +68,18 @@ padding-left:10px;
 /* style fyrir quote í about */
 header {
   width: 100%;
-  background-image: url("bg-subpage.jpg");
+  //background-image: url("bg-subpage.jpg");
   background-size: cover;
   background-position: 50% 50%;
   padding-top: 5em;
   margin-bottom: 2em;
   min-height: 15em;
-  color: white; }
+  color: white; 
+}
 
 .quote {
   padding: 1.75em;
+<<<<<<< HEAD
   font-size: 1.5em; }
 
 /*style sem ýtir Alber Einstein aðeins til hægri */
@@ -138,11 +144,29 @@ header {
 }
 
 */
+=======
+  font-size: 1.5em;
+}
+
+/*style sem ýtir Alber Einstein aðeins til hægri */
+.quote p {
+  margin-left: 13px;
+}
+
+/* INDEX CODE - Guðlaugur Kjartan Þorgeirsson */
+.bg-img {
+  //background-image: url("bg.jpg"); /* Header Mynd fyrir Forsíðu */
+}
+>>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
 
 
 @import "scss/grid";
 @import "scss/heading";
 @import "scss/text";
+<<<<<<< HEAD
 @import "scss/card";
 @import "scss/NavigationBar";
 @import "scss/Button";
+=======
+@import "scss/button";
+>>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
