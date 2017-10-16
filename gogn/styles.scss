@@ -1,58 +1,17 @@
-/*sér um myndina og textann sem er á myndinni*/
-/* style fyrir quote í about */
-.quote {
-  padding: 1.75em;
-  font-size: 1.5em;
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-/*style sem ýtir Alber Einstein aðeins til hægri */
-.quote p {
-  margin-left: 13px;
-}
 @charset "UTF-8"; /* setjum box-sizing: border-box; á allt */
 
-=======
-
-/*style sem ýtir Alber Einstein aðeins til hægri */
-.quote p {
-  margin-left: 13px;
-}
-.Navi {
-  display: flex;
-  background-color: #333;
-  justify-content: space-between;
-  color: #FFFFFF;
-  position: sticky;
-  top:0;
-  opacity: 0.9;
-  z-index: 1;
-}
-
-=======
-
-/*style sem ýtir Alber Einstein aðeins til hægri */
-.quote p {
-  margin-left: 13px;
-}
-.Navi {
-  display: flex;
-  background-color: #333;
-  justify-content: space-between;
-  color: #FFFFFF;
-  position: sticky;
-  top:0;
-  opacity: 0.9;
-  z-index: 1;
-}
-
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
-@charset "UTF-8";
-/* setjum box-sizing: border-box; á allt */
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
+/* CSS WITHOUT CLASS - EFFECTS ALL HTML FILES */
 html {
   /* stylelint-disable-line */
   box-sizing: border-box;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media (min-width: 1200px) {
+  html {
+    margin: 0;
+  }
 }
 
 *,
@@ -65,36 +24,12 @@ html {
   margin: 0;
 }
 
-html {
-  /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px;
-}
-@media (min-width: 1200px) {
-  html {
-    margin: 0;
-  }
-}
-
-img {
-  /* stylelint-disable-line */
-  max-width: 100%;
-}
-
-main {
-  /* stylelint-disable-line */
-  max-width: 1200px;
+body {
+  max-width: 75em;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
-/*
-.myndtext{
-padding-left:10px;
 
-}
-*/
-/*sér um myndina og textann sem er á myndinni*/
-/* style fyrir quote í about */
 header {
   width: 100%;
   background-size: cover;
@@ -105,66 +40,19 @@ header {
   color: white;
 }
 
-<<<<<<< HEAD
-.Navi {
-  //align-items: flex-start;
-  //justify-content: flex-start;
-  display: flex;
-  background-color: #333;
-  justify-content: space-between;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  color: #FFFFFF;
-  //position: sticky;
-  //top: 0;
-  opacity: 0.8;
-  z-index: 1;
-  color: white;
+main {
+  /* stylelint-disable-line */
   max-width: 1200px;
-  //  margin-top:0px;
-  //position: static;
-  &__Title {
-    padding: 5px;
-    font-size: 1.5em;
-    font-family: 'Roboto Slab', serif;
-  }
-=======
-.quote {
-  padding: 1.75em;
-  font-size: 1.5em; }
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
+  margin: 0 auto;
+  overflow-x: hidden;
+}
 
-  &__buttons {
-    padding: 6px;
-    display: flex;
-    color: white;
+img {
+  /* stylelint-disable-line */
+  max-width: 100%;
+}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    .Navi__buttons__kaupa {
-      width: 100%;
-      font-size: 1em;
-      overflow: initial;
-    }
-
-    .Navi__buttons__um {
-      padding-right: 15px;
-      background-color: #333;
-      border: 1px solid #333;
-    }
-    @media (max-width: 399px) {
-      .Navi__buttons__kaupa__sm {
-        display: none;
-      }
-    }
-    }
-  }
-
-=======
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
-=======
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
+/* ROW AND COLUMNs */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -178,12 +66,10 @@ header {
   padding-left: 10px;
 }
 
-<<<<<<< HEAD
 .col-12 {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .col-8 {
   width: 66.66667%;
 }
@@ -201,76 +87,21 @@ header {
     width: 100%;
   }
 }
-/* Þetta sass skjal sér um að stíla fyrirsagnirnar */
 
-.heading {
-  width: 100%;
-  padding: 0;
-  border: none;
-  font-family: 'Roboto Slab';
-  font-size: 2rem;
+/* QUOTE */
+/*sér um myndina og textann sem er á myndinni*/
+/* style fyrir quote í about */
+.quote {
+  padding: 1.75em;
+  font-size: 1.5em; 
 }
-
-.heading--one {
-  font-size: 3rem;
-}
-
-.heading--two {
-  font-size: 2rem;
-}
-
-.heading--three {
-  font-size: 1.5rem;
-}
-=======
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
-=======
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
-/* þetta sass skjal sér um að stíla meginmálið */
-
-.text__fyrirsogn {
-  line-height: 10px;
-}
-
-.text__p {
-  font-family: 'Open Sans';
-  margin-bottom: 20px;
-<<<<<<< HEAD
-  margin-left: 2px;
-}
-
-.text__head {
-<<<<<<< HEAD
-  margin-left: 20px;
-}
-=======
-  margin-left: 2px; }
-
-.text__head {
-=======
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
-  margin-left: 20px; }
-
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
-/*style sem ýtir Alber Einstein aðeins til hægri */
-
+/*style sem ýtir Quote í Aboute aðeins til hægri */
 .quote p {
   margin-left: 13px;
 }
 
-<<<<<<< HEAD
-.bg-sub-img {
-  background-image: url("bg-subpage.jpg"); /* Header Mynd fyrir Forsíðu */
-}
-@import "scss/grid";
-@import "scss/heading";
-@import "scss/text";
-@import "scss/card"; //@import "scss/NavigationBar";
-@import "scss/Button";
-@import "scss/button";
-=======
-/* INDEX CODE - Guðlaugur Kjartan Þorgeirsson */
 /* CSS WITH CLASS */
+/* Index Header Image */
 .bg-img {
   /* Index Header Control */ 
   background-image: url("bg.jpg");
@@ -283,47 +114,19 @@ header {
   top: 0;
 }
 
-/* CSS WITHOUT CLASS */
-body {
-  max-width: 75em;
-  margin: 0 auto;
-  overflow-x: hidden; 
+/* ABOUT HEADER IMAGE */
+.bg-sub-img {
+  background-image: url("bg-subpage.jpg"); /* Header Mynd fyrir Forsíðu */
 }
 
-/* BUTTON CSS */
-button {
-  /* Color Control */
-  background-color: #808080;
-  color: white;
-  /* Text Design */
-  font-size: 1.5em;
-  /* Button Design */
-  padding: 0.5em;
-  text-decoration: none;
-  border: none;
-  border-radius: 0.1em;
-  /* Button Location */
-  position: absolute;
-  top: 63%;
-  left: 45.9%;
-
+.myndtext{
+  padding-left:10px;
 }
 
-button:hover {
-  /* Cursor Change */
-  cursor: pointer;
-  /* Color Change */
-  background-color: #A9A9A9;
-}
-
+/* IMPORTS */
 @import "scss/grid";
 @import "scss/heading";
 @import "scss/text";
+@import "scss/card"; 
 @import "scss/NavigationBar";
-@import "scss/Button";
-<<<<<<< HEAD
 @import "scss/button";
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
-=======
-@import "scss/button";
->>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
