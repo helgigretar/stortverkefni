@@ -57,14 +57,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -115,33 +107,5 @@ header {
   margin-left: 20px; }
 
 .button {
-  display: inline-block;
-  margin: 0;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 256px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #eee;
-  background-color: #666;
 
-  font-size: 1rem;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer; }
-  .button:hover {
-    color: #eee;
-    background-color: #333; }
-  .button--inverted {
-    color: #666;
-    background-color: #eee; }
-  .button--inverted:hover {
-    color: #333;
-    background-color: #ccc; }
-  .button--disabled, .button--disabled:hover {
-    border-color: #eee;
-    color: #999;
-    background-color: #eee; }
+}
