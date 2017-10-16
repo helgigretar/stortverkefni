@@ -1,24 +1,40 @@
-
+/*
 .Navi {
     display: flex;
     background-color: #333;
     justify-content: space-between;
     color: #FFFFFF;
     position: sticky;
-    top:0;
-    opacity: 0.9;
+    top: 0;
+    opacity: 0.5;
     z-index: 1;
-    min-height: 30px;
-    color: white;
-    color: white;
+    color:white;
 
-    &__Title{
-      font-size: 24px;
+  //  margin-top:0px;
+    //position: static;
+
+    &__Title {
+        padding: 5px;
+        font-size: 1.5em;
+        font-family: 'Roboto Slab', serif;
     }
-    &__Buttons__kaupa{
-      background-color: blue;
-    }
-    &__Buttons__um{
-      background-color: green;
+
+    &__buttons {
+        padding: 6px;
+        display: flex;
+        color: white;
+
+        .Navi__buttons__kaupa {
+            width: 100%;
+            font-size: 1em;
+          //  overflow: visible;
+        }
+
+        .Navi__buttons__um{
+            padding-right: 15px;
+            background-color:#333;
+            border: 1px solid #333;
+        }
     }
 }
+*/

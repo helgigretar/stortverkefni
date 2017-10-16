@@ -1,5 +1,4 @@
 @charset "UTF-8";
-<<<<<<< HEAD
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 .quote {
@@ -10,22 +9,14 @@
 .quote p {
   margin-left: 13px; }
 
-.Navi {
-  display: flex;
-  background-color: #333;
-  justify-content: space-between;
-  color: #FFFFFF;
-  position: sticky;
-  top: 0;
-  opacity: 0.9;
-  z-index: 1; }
-
 /* setjum box-sizing: border-box; á allt */
 html {
   /* stylelint-disable-line */
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:after,
+*:before {
   /* stylelint-disable-line */
   box-sizing: inherit;
   /* fjarlægjum margin og padding */
@@ -57,13 +48,10 @@ padding-left:10px;
 
 }
 */
-=======
->>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 header {
   width: 100%;
-  background-image: url("bg-subpage.jpg");
   background-size: cover;
   background-position: 50% 50%;
   padding-top: 5em;
@@ -71,16 +59,38 @@ header {
   min-height: 15em;
   color: white; }
 
-.quote {
-  padding: 1.75em;
-  font-size: 1.5em; }
+.Navi {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: #FFFFFF;
+  opacity: 0.8;
+  z-index: 1;
+  color: white;
+  max-width: 1200px; }
+  .Navi__Title {
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif; }
+  .Navi__buttons {
+    padding: 6px;
+    display: flex;
+    color: white; }
+    .Navi__buttons .Navi__buttons__kaupa {
+      width: 100%;
+      font-size: 1em;
+      overflow: initial; }
+    .Navi__buttons .Navi__buttons__um {
+      padding-right: 15px;
+      background-color: #333;
+      border: 1px solid #333; }
+    @media (max-width: 399px) {
+      .Navi__buttons .Navi__buttons__kaupa__sm {
+        display: none; } }
 
-/*style sem ýtir Alber Einstein aðeins til hægri */
-.quote p {
-  margin-left: 13px;
-  font-size: 18px; }
-
-<<<<<<< HEAD
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -138,14 +148,14 @@ header {
 .text__head {
   margin-left: 20px; }
 
-/*
-.button {
+/*style sem ýtir Alber Einstein aðeins til hægri */
+.quote p {
+  margin-left: 13px; }
 
-}
+.bg-sub-img {
+  background-image: url("bg-subpage.jpg");
+  /* Header Mynd fyrir Forsíðu */ }
 
-*/
-=======
->>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
 /* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
   display: flex;
@@ -195,10 +205,8 @@ header {
 
 .text__head {
   margin-left: 20px; }
-<<<<<<< HEAD
 
 .card {
-<<<<<<< HEAD
   width: 100%;
   min-width: 200px;
   max-width: 800px;
@@ -240,43 +248,17 @@ header {
     background-color: #ddd;
     transition: ease 500ms; } }
 
-.Navi {
-  display: flex;
-  background-color: #333;
-  justify-content: space-between;
-  color: #FFFFFF;
-  position: sticky;
-  top: 0;
-  opacity: 0.9;
-  z-index: 1;
-  min-height: 30px;
-  color: white;
-  color: white; }
-  .Navi__Title {
-    font-size: 24px; }
-  .Navi__Buttons__kaupa {
-    background-color: blue; }
-  .Navi__Buttons__um {
-    background-color: green; }
-
 .button {
   display: inline-block;
   margin: 0;
   padding: 10px 5px;
   border: 1px solid #666;
   border-radius: 4px;
-=======
->>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
   width: 100%;
-  min-width: 200px;
-  max-width: 800px;
+  max-width: 256px;
   overflow: hidden;
-<<<<<<< HEAD
-  text-overflow: ellipsis;
-  white-space: nowrap;
   color: #eee;
   background-color: #666;
-  font-family: Lato, helvetica, arial, sans-serif;
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
@@ -284,93 +266,22 @@ header {
   .button:hover {
     color: #eee;
     background-color: #333; }
-  .button--inverted {
-    color: #666;
-    background-color: #eee; }
-  .button--inverted:hover {
-    color: #333;
-    background-color: #ccc; }
-  .button--disabled, .button--disabled:hover {
-    border-color: #eee;
-    color: #999;
-    background-color: #eee; }
-=======
-  border-radius: 3px;
-  background-color: #eee;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); 
-}
-@media (min-width: 800px) {
-  .card {
-    display: flex; 
-  }
-}
-.card__heading {
-  margin-bottom: 15px;
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
   width: 100%;
-  font-family: Merriweather, georgia, serif;
-  font-size: 1.5rem;
-  word-break: break-word; 
-}
-.card__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px; }
-  @media (min-width: 800px) {
-    .card__content {
-      align-items: flex-start; 
-    } 
-  }
-.card__text {
-  margin-bottom: 30px; 
-}
-.card__img {
-  width: 100%;
-  min-width: 200px;
-  max-width: 100%; 
-}
-@media (min-width: 800px) {
-  .card__img {
-    height: 100%;
-    min-width: 400px;
-    object-fit: cover; 
-  }   
-}
-
-@media (min-width: 600px) {
-  .card--wide:hover {
-    background-color: #ddd;
-    transition: ease 500ms; 
-  } 
-}
-
-.cardlist__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-bottom: 20px;
-  margin-left: -10px; 
-}
-
-.cardlist .card {
-  display: block;
-  height: 100%; 
-}
-
-.cardlist__col {
-  padding: 10px; 
-}
-
-@media (min-width: 599px) {
-  .cardlist__col {
-    width: 50%; 
-  } 
-}
-
-.cardlist__col .card__content {
-  align-items: center; 
-}
-
-=======
->>>>>>> aed3d90ab3c0a08978177519f781217f8e77e72c
->>>>>>> 10a1e165526440238b7c9cbedfc14875d374c246
+  max-width: 256px;
+  overflow: hidden;
+  color: #eee;
+  background-color: #666;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer; }
+  .button:hover {
+    color: #eee;
+    background-color: #333; }
