@@ -5,6 +5,7 @@
   font-size: 1.5em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*style sem ýtir Alber Einstein aðeins til hægri */
 .quote p {
   margin-left: 13px;
@@ -28,6 +29,24 @@
   z-index: 1;
 }
 
+=======
+
+/*style sem ýtir Alber Einstein aðeins til hægri */
+.quote p {
+  margin-left: 13px;
+}
+.Navi {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  color: #FFFFFF;
+  position: sticky;
+  top:0;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+>>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
 @charset "UTF-8";
 /* setjum box-sizing: border-box; á allt */
 >>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
@@ -122,6 +141,7 @@ header {
     color: white;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     .Navi__buttons__kaupa {
       width: 100%;
       font-size: 1em;
@@ -143,6 +163,8 @@ header {
 
 =======
 >>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
+=======
+>>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -156,6 +178,7 @@ header {
   padding-left: 10px;
 }
 
+<<<<<<< HEAD
 .col-12 {
   width: 100%;
 }
@@ -201,6 +224,8 @@ header {
 }
 =======
 >>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
+=======
+>>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
 /* þetta sass skjal sér um að stíla meginmálið */
 
 .text__fyrirsogn {
@@ -215,12 +240,15 @@ header {
 }
 
 .text__head {
+<<<<<<< HEAD
   margin-left: 20px;
 }
 =======
   margin-left: 2px; }
 
 .text__head {
+=======
+>>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
   margin-left: 20px; }
 
 >>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
@@ -293,5 +321,9 @@ button:hover {
 @import "scss/text";
 @import "scss/NavigationBar";
 @import "scss/Button";
+<<<<<<< HEAD
+@import "scss/button";
+>>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f
+=======
 @import "scss/button";
 >>>>>>> 9995a807675b1c2d77e2a1e454767b5665a2200f

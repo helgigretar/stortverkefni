@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/*sér um myndina og textann sem er á myndinni*/
+/* style fyrir quote í about */
+.quote {
+  padding: 1.75em;
+  font-size: 1.5em; }
+
+/*style sem ýtir Alber Einstein aðeins til hægri */
+.quote p {
+  margin-left: 13px; }
+
+.Navi {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
+  z-index: 1; }
+
+/* setjum box-sizing: border-box; á allt */
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  /* stylelint-disable-line */
+  box-sizing: inherit;
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0; }
+
+html {
+  /* stylelint-disable-line */
+  margin-right: 20px;
+  margin-left: 20px; }
+
+@media (min-width: 1200px) {
+  html {
+    margin: 0; } }
+
+img {
+  /* stylelint-disable-line */
+  max-width: 100%; }
+
+main {
+  /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+/*
+.myndtext{
+padding-left:10px;
+
+}
+*/
+/*sér um myndina og textann sem er á myndinni*/
+/* style fyrir quote í about */
+header {
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 5em;
+  margin-bottom: 2em;
+  min-height: 15em;
+  color: white; }
+
+.quote {
+  padding: 1.75em;
+  font-size: 1.5em; }
+
+/*style sem ýtir Alber Einstein aðeins til hægri */
+.quote p {
+  margin-left: 13px;
+  font-size: 18px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px; }
+
+.col {
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.col-12 {
+  width: 100%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+@media (max-width: 599px) {
+  .col-sm-12 {
+    width: 100%;
+    width: 100%; } }
+
+/* þetta sass skjal sér um að stíla meginmálið */
+.text__fyrirsogn {
+  line-height: 10px; }
+
+.text__p {
+  font-family: 'Open Sans';
+  margin-bottom: 20px;
+  margin-left: 2px; }
+
+.text__head {
+  margin-left: 20px; }
+
+/*style sem ýtir Alber Einstein aðeins til hægri */
+.quote p {
+  margin-left: 13px; }
+
+/* INDEX CODE - Guðlaugur Kjartan Þorgeirsson */
+/* CSS WITH CLASS */
+.bg-img {
+  /* Index Header Control */
+  background-image: url("bg.jpg");
+  /* Image Control */
+  max-width: 75em;
+  width: 105%;
+  height: 100vh;
+  /* Image Location */
+  position: sticky;
+  top: 0; }
+
+/* CSS WITHOUT CLASS */
+body {
+  max-width: 75em;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+/* BUTTON CSS */
+button {
+  /* Color Control */
+  background-color: #808080;
+  color: white;
+  /* Text Design */
+  font-size: 1.5em;
+  /* Button Design */
+  padding: 0.5em;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.1em;
+  /* Button Location */
+  position: absolute;
+  top: 63%;
+  left: 45.9%; }
+
+button:hover {
+  /* Cursor Change */
+  cursor: pointer;
+  /* Color Change */
+  background-color: #A9A9A9; }
+
+/* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px; }
+
+.col {
+  padding-right: 20px / 2;
+  padding-left: 20px / 2; }
+  .col-12 {
+    width: 100%; }
+  .col-8 {
+    width: 66.66667%; }
+  .col-6 {
+    width: 50%; }
+  .col-4 {
+    width: 33.33333%; }
+  @media (max-width: 599px) {
+    .col-sm-12 {
+      width: 100%;
+      width: 100%; } }
+
+/* Þetta sass skjal sér um að stíla fyrirsagnirnar og er með Roboto Slab í font-family */
+.heading {
+  width: 100%;
+  padding: 0;
+  border: none;
+  font-family: 'Roboto Slab';
+  font-size: 2rem;
+  color: #000000;
+  /* HEADING STYLE FOR INDEX */ }
+  .heading--one {
+    font-size: 3rem; }
+  .heading--two {
+    font-size: 2rem; }
+  .heading--three {
+    font-size: 1.5rem; }
+  .heading-index {
+    /* Color */
+    color: #000000; }
+    .heading-index-one {
+      font-size: 2em;
+      /* Text Location */
+      text-align: center;
+      position: absolute;
+      top: 40%; }
+    .heading-index-two {
+      font-size: 3em;
+      /* Text Location */
+      text-align: center;
+      position: absolute;
+      top: 48%; }
+
+/* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
+.text__fyrirsogn {
+  line-height: 10px; }
+
+.text__p {
+  font-family: 'Open Sans';
+  margin-bottom: 20px;
+  margin-left: 2px; }
+
+.text__head {
+  margin-left: 20px; }
+
+.Navi {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
+  z-index: 1;
+  min-height: 30px;
+  color: white;
+  color: white; }
+  .Navi__Title {
+    font-size: 24px; }
+  .Navi__Buttons__kaupa {
+    background-color: blue; }
+  .Navi__Buttons__um {
+    background-color: green; }
