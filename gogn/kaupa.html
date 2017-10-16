@@ -10,51 +10,101 @@
   <body>
     <main>
       <div class="grid">
-        <div class="row col">
+        <div class="row col col-12 col-sm-12">
           <header class="header">
             <h1 class="heading heading--one">Kaupa</h1>
           </header>
         </div>
         <div class="info">
-          <div class="text">
-        Persónuupplýsingar
-        Nafn:
-
-        Kennitala:
-
-        123456-7890
-        Kyn:
-        Kona
-        Karl
-        Annað
-        Sími:
-
-        +354 812 3456
-        Heimilisfang:
-
-        Skrá mig á póstlista
-        Greiðsluupplýsingar
-        Greiða með:
-
-        Nafn á korti:
-
-        Kortanúmer:
-
-        5999-9999-9999-9999
-        Gildistími:
-        Mán
-
-        Ár
-
-        Panta
-          </div>
-        </div>
+          <form class="kaup">
+            <fieldset class="moreinfo">
+              <legend class="heading heading--two">Persónuupplýsingar</legend>
+              <ul class="listi">
+                <li>
+                  <label for "nafn">Nafn:</label>
+                  <input type="text" name="nafn">
+                </li>
+                <li>
+                  <label for "kennitala">Kennitala:</label>
+                  <input type="text" name="kennitala" placeholder="123456-7890">
+                </li>
+                <li>
+                  <p>Kyn:</p>
+                  <input type="radio" name="gender" id="gf" value="1">
+                  <label for="gf">Kona</label>
+                  <input type="radio" name="gender" id="gm" value="2">
+                  <label for="gm">Karl</label>
+                  <input type="radio" name="gender" id="ga" value="3">
+                  <label for="ga">Annað</label>
+                </li>
+                <li>
+                  <label for "simi">Sími:</label>
+                  <input type="text" name="simi">
+                </li>
+                <li>
+                  <label for="heimili">Heimilisfang:</label>
+                  <input type="text" name="heimili">
+                </li>
+                <li>
+                  <label for="postlist">Skrá mig á póstlista</label>
+                  <input type="checkbox" name="postlist">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="moreinfo">
+              <legend class="heading heading--two">Greiðsluupplýsingar</legend>
+              <ul class="listi">
+                <li>
+                  <label for="greidsla">Greiða með:</label>
+                  <select name="greidsla" id="greidsla">
+                    <option value="kredit">Kreditkorti</option>
+                    <option value="milli">Millifærsli</option>
+                    <option value="fee">Reiðufé</option>
+                  </select>
+                </li>
+                <li>
+                  <label for="kortnafn">Nafn á korti:</label>
+                  <input type="text" name="kortnafn">
+                </li>
+                <li>
+                  <label for="kortnumer">Kortanúmer:</label>
+                  <input type="text" name="kortnumer" placeholder="5999-9999-9999-9999">
+                </li>
+                <li>
+                  <p>Gildistími:</p>
+                  <label for="man">Mán</label>
+                  <select name="man" id="man">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </li>
+                <li>
+                  <label for="ar">Ár</label>
+                  <select name="ar" id="ar">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+          </form>
+          <button>Panta</button>
       </div>
+    </div>
     </main>
-
   </body>
-
-
   <footer>
     Fooþjónustan
     123-4567
