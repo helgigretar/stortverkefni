@@ -41,10 +41,15 @@
   // todo útfæra rest af grid
 
   &-sm {
-    @media (max-width: 599px) {
+    @media (max-width: 600px) {
       &-12 {
 
         @include columns(12);
+        width: 100%;
+      }
+
+      &-6 {
+        @include columns(6);
         width: 100%;
       }
 

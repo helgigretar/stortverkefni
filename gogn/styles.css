@@ -1,4 +1,34 @@
 @charset "UTF-8";
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  /* stylelint-disable-line */
+  box-sizing: inherit;
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0; }
+
+html {
+  /* stylelint-disable-line */
+  margin-right: 20px;
+  margin-left: 20px; }
+
+@media (min-width: 1200px) {
+  html {
+    margin: 0; } }
+
+img {
+  /* stylelint-disable-line */
+  max-width: 100%; }
+
+main {
+  /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 header {
@@ -19,6 +49,76 @@ header {
 .quote p {
   margin-left: 13px; }
 
+.kaup {
+  display: flex;
+  flex-flow: row;
+  font-family: 'Open Sans'; }
+  @media (max-width: 400px) {
+    .kaup {
+      flex-flow: column; } }
+
+.listi {
+  list-style-type: none; }
+
+.moreinfo {
+  border: 0;
+  width: 100%;
+  margin-left: 8%;
+  margin: auto;
+  margin-top: 0; }
+
+label {
+  display: flex;
+  flex-direction: column; }
+
+.spec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 3%; }
+  .spec input {
+    width: 8%; }
+
+.data {
+  width: 30%; }
+
+.data:nth-child(3) {
+  margin-left: 9%; }
+
+input {
+  width: 100%;
+  padding: 1%; }
+
+select {
+  width: 100%;
+  padding: 1%; }
+
+li {
+  margin-bottom: 4%;
+  margin-top: 4%; }
+
+.mybutt {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 16em;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #eee;
+  background-color: #666;
+  font-size: 1em;
+  width: 100%;
+  transition: 1s ease; }
+
+.mybutt:hover {
+  background-color: #333;
+  transition: 1s ease;
+  cursor: pointer; }
+
 /* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
   display: flex;
@@ -38,9 +138,12 @@ header {
     width: 50%; }
   .col-4 {
     width: 33.33333%; }
-  @media (max-width: 599px) {
+  @media (max-width: 600px) {
     .col-sm-12 {
       width: 100%;
+      width: 100%; }
+    .col-sm-6 {
+      width: 50%;
       width: 100%; } }
 
 /* Þetta sass skjal sér um að stíla fyrirsagnirnar og er með Roboto Slab í font-family */
@@ -51,7 +154,8 @@ header {
   font-family: 'Roboto Slab';
   font-size: 2rem; }
   .heading--one {
-    font-size: 3rem; }
+    font-size: 3rem;
+    padding-left: 1%; }
   .heading--two {
     font-size: 2rem; }
   .heading--three {
@@ -68,88 +172,3 @@ header {
 
 .text__head {
   margin-left: 20px; }
-<<<<<<< HEAD
-
-.card {
-  width: 100%;
-  min-width: 200px;
-  max-width: 800px;
-  overflow: hidden;
-  border-radius: 3px;
-  background-color: #eee;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); 
-}
-@media (min-width: 800px) {
-  .card {
-    display: flex; 
-  }
-}
-.card__heading {
-  margin-bottom: 15px;
-  width: 100%;
-  font-family: Merriweather, georgia, serif;
-  font-size: 1.5rem;
-  word-break: break-word; 
-}
-.card__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px; }
-  @media (min-width: 800px) {
-    .card__content {
-      align-items: flex-start; 
-    } 
-  }
-.card__text {
-  margin-bottom: 30px; 
-}
-.card__img {
-  width: 100%;
-  min-width: 200px;
-  max-width: 100%; 
-}
-@media (min-width: 800px) {
-  .card__img {
-    height: 100%;
-    min-width: 400px;
-    object-fit: cover; 
-  }   
-}
-
-@media (min-width: 600px) {
-  .card--wide:hover {
-    background-color: #ddd;
-    transition: ease 500ms; 
-  } 
-}
-
-.cardlist__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-bottom: 20px;
-  margin-left: -10px; 
-}
-
-.cardlist .card {
-  display: block;
-  height: 100%; 
-}
-
-.cardlist__col {
-  padding: 10px; 
-}
-
-@media (min-width: 599px) {
-  .cardlist__col {
-    width: 50%; 
-  } 
-}
-
-.cardlist__col .card__content {
-  align-items: center; 
-}
-
-=======
->>>>>>> aed3d90ab3c0a08978177519f781217f8e77e72c
