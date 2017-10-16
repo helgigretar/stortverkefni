@@ -29,7 +29,6 @@ header {
   width: 100%;
   background-size: cover;
   background-position: 50% 50%;
-  padding-top: 5em;
   margin-bottom: 2em;
   min-height: 15em;
   color: white; }
@@ -44,34 +43,9 @@ img {
   /* stylelint-disable-line */
   max-width: 100%; }
 
-/* ROW AND COLUMNs */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-bottom: 20px;
-  margin-left: -10px; }
-
-.col {
-  padding-right: 10px;
-  padding-left: 10px; }
-
-.col-12 {
-  width: 100%; }
-
-.col-8 {
-  width: 66.66667%; }
-
-.col-6 {
-  width: 50%; }
-
-.col-4 {
-  width: 33.33333%; }
-
-@media (max-width: 599px) {
-  .col-sm-12 {
-    width: 100%;
-    width: 100%; } }
+h3 {
+  padding-top: 5em;
+  color: white; }
 
 /* QUOTE */
 /*sér um myndina og textann sem er á myndinni*/
@@ -91,7 +65,7 @@ img {
   background-image: url("bg.jpg");
   /* Image Control */
   max-width: 75em;
-  width: 105%;
+  width: 100%;
   height: 100vh;
   /* Image Location */
   position: sticky;
@@ -125,9 +99,12 @@ img {
     width: 50%; }
   .col-4 {
     width: 33.33333%; }
-  @media (max-width: 599px) {
+  @media (max-width: 600px) {
     .col-sm-12 {
       width: 100%;
+      width: 100%; }
+    .col-sm-6 {
+      width: 50%;
       width: 100%; } }
 
 /* Þetta sass skjal sér um að stíla fyrirsagnirnar og er með Roboto Slab í font-family */
@@ -292,3 +269,97 @@ img {
     cursor: pointer;
     /* Color Change */
     background-color: #A9A9A9; }
+
+.kaup {
+  display: flex;
+  flex-flow: row;
+  font-family: 'Open Sans'; }
+  @media (max-width: 400px) {
+    .kaup {
+      flex-flow: column; } }
+
+.listi {
+  list-style-type: none; }
+
+.moreinfo {
+  border: 0;
+  width: 100%;
+  margin: 0 auto auto; }
+
+label {
+  display: flex;
+  flex-direction: column; }
+
+.spec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 3%; }
+  .spec input {
+    width: 8%; }
+
+.data {
+  width: 30%; }
+
+.data:nth-child(3) {
+  margin-left: 9%; }
+
+input {
+  width: 100%;
+  padding: 1%; }
+
+select {
+  width: 100%;
+  padding: 1%; }
+
+li {
+  margin-bottom: 4%;
+  margin-top: 4%; }
+
+.mybutt {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 16em;
+  padding: 10px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #eee;
+  background-color: #666;
+  font-size: 1em;
+  width: 100%;
+  transition: 1s ease; }
+
+.mybutt:hover {
+  background-color: #333;
+  transition: 1s ease;
+  cursor: pointer; }
+
+/* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px; }
+
+.col {
+  padding-right: 20px / 2;
+  padding-left: 20px / 2; }
+  .col-12 {
+    width: 100%; }
+  .col-8 {
+    width: 66.66667%; }
+  .col-6 {
+    width: 50%; }
+  .col-4 {
+    width: 33.33333%; }
+  @media (max-width: 600px) {
+    .col-sm-12 {
+      width: 100%;
+      width: 100%; }
+    .col-sm-6 {
+      width: 50%;
+      width: 100%; } }
