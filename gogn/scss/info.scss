@@ -1,0 +1,81 @@
+.kaup {
+  display: flex;
+  flex-flow: row;
+  font-family: 'Open Sans';
+  @media (max-width: 400px) {
+    flex-flow: column;
+  }
+}
+
+.listi {
+  list-style-type: none;
+}
+
+.moreinfo {
+  border: 0;
+  width: 100%;
+  margin: 0 auto auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 3%;
+
+  & input {
+    width: 8%;
+  }
+}
+
+.data {
+  width: 30%;
+}
+
+.data:nth-child(3) {
+  margin-left: 9%;
+}
+
+input {
+  width: 100%;
+  padding: 1%;
+}
+
+select {
+  width: 100%;
+  padding: 1%;
+}
+
+li {
+  margin-bottom: 4%;
+  margin-top: 4%;
+}
+
+.mybutt {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 16em;
+  padding: 10px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #eee;
+  background-color: #666;
+  font-size: 1em;
+  width: 100%;
+  transition: 1s ease;
+}
+
+.mybutt:hover {
+  background-color: #333;
+  transition: 1s ease;
+  cursor: pointer;
+}
+@import "scss/grid";
