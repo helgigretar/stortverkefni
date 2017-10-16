@@ -32,8 +32,7 @@ header {
   background-position: 50% 50%;
   padding-top: 5em;
   margin-bottom: 2em;
-  min-height: 15em;
-  color: white; }
+  min-height: 15em; }
 
 img {
   max-width: 100%; }
@@ -59,8 +58,7 @@ img {
   top: 0; }
 
 .bg-sub-img {
-  background-image: url("bg-subpage.jpg");
-  /* Header Mynd fyrir Forsíðu */ }
+  background-image: url("bg-subpage.jpg"); }
 
 .myndtext {
   padding-left: 10px; }
@@ -103,7 +101,8 @@ img {
   /* HEADING STYLE FOR INDEX */ }
   .heading--one {
     font-size: 3rem;
-    padding-left: 1%; }
+    padding-left: 1%;
+    color: white; }
   .heading--two {
     font-size: 2rem; }
   .heading--three {
