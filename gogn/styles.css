@@ -129,18 +129,3 @@ header {
       width: 50%; } }
   .cardlist__col .card__content {
     align-items: center; }
-
-    .kaup{
-      display: flex;
-      flex-flow: row;
-    }
-
-    .listi{
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .moreinfo{
-      border: 0;
-
-    }
