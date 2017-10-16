@@ -54,9 +54,7 @@ header {
 /*style sem ýtir Alber Einstein aðeins til hægri */
 .quote p {
   margin-left: 13px; }
-
-
-
+  
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -107,5 +105,4 @@ header {
   margin-left: 20px; }
 
 .button {
-
 }
