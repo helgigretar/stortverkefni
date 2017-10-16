@@ -1,4 +1,27 @@
 
 .button {
-  
+  display: inline-block;
+
+  margin: 0;
+  padding: 10px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 256px;
+
+  overflow: hidden;
+  color: #eee;
+  background-color: #666;
+  font-size: 1rem;
+
+  text-decoration: none;
+  text-align: center;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #eee;
+    background-color: #333;
+  }
+
 }

@@ -1,15 +1,20 @@
+
 $gutter: 20px;
 
+@charset "UTF-8";
+/* setjum box-sizing: border-box; á allt */
 html {
   /* stylelint-disable-line */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-*, *:before, *:after {
+*, *:after, *:before {
   /* stylelint-disable-line */
   box-sizing: inherit;
   /* fjarlægjum margin og padding */
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 html {
   /* stylelint-disable-line */
@@ -32,114 +37,191 @@ main {
 /* style fyrir quote í about */
 header {
   width: 100%;
-  background-image: url("bg-subpage.jpg");
   background-size: cover;
   background-position: 50% 50%;
   padding-top: 5em;
   margin-bottom: 2em;
   min-height: 15em;
-  color: white; }
+<<<<<<< HEAD
 
-  .quote {
-    padding: 1.75em;
+.Navi {
+  //align-items: flex-start;
+  //justify-content: flex-start;
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: #FFFFFF;
+  //position: sticky;
+  //top: 0;
+  opacity: 0.8;
+  z-index: 1;
+  color: white;
+  max-width: 1200px;
+  //  margin-top:0px;
+  //position: static;
+  &__Title {
+    padding: 5px;
     font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
   }
 
-  /*style sem ýtir Alber Einstein aðeins til hægri */
-  .quote p {
-    margin-left: 13px;
-  }
-
-  .kaup{
+  &__buttons {
+    padding: 6px;
     display: flex;
-    flex-flow: row;
-    font-family: 'Open Sans';
-    @media (max-width: 400px){
-      flex-flow: column;
+    color: white;
+
+    .Navi__buttons__kaupa {
+      width: 100%;
+      font-size: 1em;
+      overflow: initial;
+    }
+
+    .Navi__buttons__um {
+      padding-right: 15px;
+      background-color: #333;
+      border: 1px solid #333;
+    }
+    @media (max-width: 399px) {
+      .Navi__buttons__kaupa__sm {
+        display: none;
+      }
+    }
     }
   }
 
-  .listi{
-    list-style-type: none;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
 
-  .moreinfo{
-    border: 0;
+.col {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+@media (max-width: 599px) {
+  .col-sm-12 {
     width: 100%;
-    margin-left: 8%;
-    margin: auto;
-    margin-top: 0;
-  }
-  label{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .spec{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    margin-bottom: 3%;
-    & input{
-      width: 8%;
-    }
-  }
-
-  .data{
-    width: 30%;
-  }
-  .data:nth-child(3){
-    margin-left: 9%;
-  }
-
-  input{
     width: 100%;
-    padding: 1%;
   }
+}
+/* Þetta sass skjal sér um að stíla fyrirsagnirnar */
 
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-  }
+.heading {
+  width: 100%;
+  padding: 0;
+  border: none;
+  font-family: 'Roboto Slab';
+  font-size: 2rem;
+}
 
-  select{
-    width: 100%;
-    padding: 1%;
-  }
+.heading--one {
+  font-size: 3rem;
+}
 
-  li{
-    margin-bottom: 4%;
-    margin-top: 4%;
-  }
+.heading--two {
+  font-size: 2rem;
+}
 
-  .mybutt {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    max-width: 16em;
-    padding: 10px 5px 10px 5px;
-    border: 1px solid #666;
-    border-radius: 4px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    color: #eee;
-    background-color: #666;
-    font-size: 1em;
-    width: 100%;
-    transition: 1s ease;
-  }
+.heading--three {
+  font-size: 1.5rem;
+}
 
-  .mybutt:hover {
-    background-color: #333;
-    transition: 1s ease;
-    cursor: pointer;
-  }
+/* þetta sass skjal sér um að stíla meginmálið */
+
+.text__fyrirsogn {
+  line-height: 10px;
+}
+
+.text__p {
+  font-family: 'Open Sans';
+  margin-bottom: 20px;
+  margin-left: 2px;
+}
+
+.text__head {
+  margin-left: 20px;
+}
+
+
+/*style sem ýtir Alber Einstein aðeins til hægri */
+
+.quote p {
+  margin-left: 13px;
+}
+
+/* INDEX CODE - Guðlaugur Kjartan Þorgeirsson */
+/* CSS WITH CLASS */
+.bg-img {
+  /* Index Header Control */
+  background-image: url("bg.jpg");
+  /* Image Control */
+  max-width: 75em;
+  width: 105%;
+  height: 100vh;
+  /* Image Location */
+  position: sticky;
+  top: 0;
+}
+
+/* CSS WITHOUT CLASS */
+body {
+  max-width: 75em;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* BUTTON CSS */
+button {
+  /* Color Control */
+  background-color: #808080;
+  color: white;
+  /* Text Design */
+  font-size: 1.5em;
+  /* Button Design */
+  padding: 0.5em;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.1em;
+  /* Button Location */
+  position: absolute;
+  top: 63%;
+  left: 45.9%;
+
+}
+
+button:hover {
+  /* Cursor Change */
+  cursor: pointer;
+  /* Color Change */
+  background-color: #A9A9A9;
+}
 
 @import "scss/grid";
-@import "scss/header";
 @import "scss/heading";
 @import "scss/text";
+@import "scss/NavigationBar";
+@import "scss/Button";
 @import "scss/button";
 @import "scss/info"
