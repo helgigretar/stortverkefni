@@ -7,6 +7,7 @@
 
   font-family: 'Roboto Slab';
   font-size: 2rem;
+  color: #000000;
 
   &--one {
     font-size: 3rem;
@@ -18,5 +19,27 @@
 
   &--three {
     font-size: 1.5rem;
+  }
+
+  /* HEADING STYLE FOR INDEX */
+  &-index {
+    /* Color */
+    color: #000000;
+    
+    &-one {
+      font-size: 2em;
+      /* Text Location */
+      text-align: center;
+      position: absolute;
+      top: 40%;
+    }
+
+    &-two {
+      font-size: 3em;
+      /* Text Location */
+      text-align: center;
+      position: absolute;
+      top: 48%;
+    }
   }
 }

@@ -1,4 +1,3 @@
-
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 .quote {
@@ -81,8 +80,6 @@ header {
   font-size: 18px;
 }
 
-
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -106,20 +103,6 @@ header {
       width: 100%;
       width: 100%; } }
 
-/* Þetta sass skjal sér um að stíla fyrirsagnirnar */
-.heading {
-  width: 100%;
-  padding: 0;
-  border: none;
-  font-family: 'Roboto Slab';
-  font-size: 2rem; }
-  .heading--one {
-    font-size: 3rem; }
-  .heading--two {
-    font-size: 2rem; }
-  .heading--three {
-    font-size: 1.5rem; }
-
 /* þetta sass skjal sér um að stíla meginmálið */
 .text__fyrirsogn {
   line-height: 10px; }
@@ -131,28 +114,62 @@ header {
 
 .text__head {
   margin-left: 20px; }
-/*
-.button {
-
-}
-
-*/
-  font-size: 1.5em;
-}
 
 /*style sem ýtir Alber Einstein aðeins til hægri */
 .quote p {
   margin-left: 13px;
 }
+
 /* INDEX CODE - Guðlaugur Kjartan Þorgeirsson */
+/* CSS WITH CLASS */
 .bg-img {
-  background-image: url("bg.jpg"); /* Header Mynd fyrir Forsíðu */
+  /* Index Header Control */ 
+  background-image: url("bg.jpg");
+  /* Image Control */
+  max-width: 75em;
+  width: 105%;
+  height: 100vh;
+  /* Image Location */
+  position: sticky;
+  top: 0;
+}
+
+/* CSS WITHOUT CLASS */
+body {
+  max-width: 75em;
+  margin: 0 auto;
+  overflow-x: hidden; 
+}
+
+/* BUTTON CSS */
+button {
+  /* Color Control */
+  background-color: #808080;
+  color: white;
+  /* Text Design */
+  font-size: 1.5em;
+  /* Button Design */
+  padding: 0.5em;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.1em;
+  /* Button Location */
+  position: absolute;
+  top: 63%;
+  left: 45.9%;
+
+}
+
+button:hover {
+  /* Cursor Change */
+  cursor: pointer;
+  /* Color Change */
+  background-color: #A9A9A9;
 }
 
 @import "scss/grid";
 @import "scss/heading";
 @import "scss/text";
-@import "scss/card";
 @import "scss/NavigationBar";
 @import "scss/Button";
 @import "scss/button";
