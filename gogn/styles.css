@@ -68,6 +68,7 @@ header {
 
 .text__head {
   margin-left: 20px; }
+<<<<<<< HEAD
 
 .card {
   width: 100%;
@@ -76,35 +77,45 @@ header {
   overflow: hidden;
   border-radius: 3px;
   background-color: #eee;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); 
+}
+@media (min-width: 800px) {
+  .card {
+    display: flex; 
+  }
+}
+.card__heading {
+  margin-bottom: 15px;
+  width: 100%;
+  font-family: Merriweather, georgia, serif;
+  font-size: 1.5rem;
+  word-break: break-word; 
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px; }
   @media (min-width: 800px) {
-    .card {
-      display: flex; } }
-  .card__heading {
-    margin-bottom: 15px;
-    width: 100%;
-    font-family: Merriweather, georgia, serif;
-    font-size: 1.5rem;
-    word-break: break-word; }
-  .card__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px; }
-    @media (min-width: 800px) {
-      .card__content {
-        align-items: flex-start; } }
-  .card__text {
-    margin-bottom: 30px; }
+    .card__content {
+      align-items: flex-start; 
+    } 
+  }
+.card__text {
+  margin-bottom: 30px; 
+}
+.card__img {
+  width: 100%;
+  min-width: 200px;
+  max-width: 100%; 
+}
+@media (min-width: 800px) {
   .card__img {
-    width: 100%;
-    min-width: 200px;
-    max-width: 100%; }
-    @media (min-width: 800px) {
-      .card__img {
-        height: 100%;
-        min-width: 400px;
-        object-fit: cover; } }
+    height: 100%;
+    min-width: 400px;
+    object-fit: cover; 
+  }   
+}
 
 @media (min-width: 600px) {
   .card--wide:hover {
@@ -140,3 +151,5 @@ header {
   align-items: center; 
 }
 
+=======
+>>>>>>> aed3d90ab3c0a08978177519f781217f8e77e72c
