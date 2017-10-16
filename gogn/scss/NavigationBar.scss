@@ -1,0 +1,24 @@
+
+.Navi {
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    color: #FFFFFF;
+    position: sticky;
+    top:0;
+    opacity: 0.9;
+    z-index: 1;
+    min-height: 30px;
+    color: white;
+    color: white;
+
+    &__Title{
+      font-size: 24px;
+    }
+    &__Buttons__kaupa{
+      background-color: blue;
+    }
+    &__Buttons__um{
+      background-color: green;
+    }
+}

@@ -1,10 +1,10 @@
 {
-  "name": "verkefni6",
+  "name": "verkefni7",
   "version": "0.6.0",
-  "description": "Verkefni 6 í vefforritun 2017",
+  "description": "Verkefni 7 í vefforritun 2017",
   "main": "index.js",
   "scripts": {
-    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "browser-sync": "browser-sync start --server --files about.html kaupa.html styles.css",
     "sass": "node-sass styles.scss styles.css -w",
     "dev": "npm-run-all --parallel sass browser-sync",
     "lint": "stylelint *.scss scss/*.scss --syntax scss"
