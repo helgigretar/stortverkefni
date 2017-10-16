@@ -1,40 +1,4 @@
 @charset "UTF-8";
-/* setjum box-sizing: border-box; á allt */
-html {
-  /* stylelint-disable-line */
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  /* stylelint-disable-line */
-  box-sizing: inherit;
-  /* fjarlægjum margin og padding */
-  padding: 0;
-  margin: 0; }
-
-html {
-  /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px; }
-  @media (min-width: 1200px) {
-    html {
-      margin: 0; } }
-
-img {
-  /* stylelint-disable-line */
-  max-width: 100%; }
-
-main {
-  /* stylelint-disable-line */
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow-x: hidden; }
-
-/*
-.myndtext{
-padding-left:10px;
-
-}
-*/
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 header {
@@ -54,7 +18,8 @@ header {
 /*style sem ýtir Alber Einstein aðeins til hægri */
 .quote p {
   margin-left: 13px; }
-  
+
+/* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +43,7 @@ header {
       width: 100%;
       width: 100%; } }
 
-/* Þetta sass skjal sér um að stíla fyrirsagnirnar */
+/* Þetta sass skjal sér um að stíla fyrirsagnirnar og er með Roboto Slab í font-family */
 .heading {
   width: 100%;
   padding: 0;
@@ -92,7 +57,7 @@ header {
   .heading--three {
     font-size: 1.5rem; }
 
-/* þetta sass skjal sér um að stíla meginmálið */
+/* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
 .text__fyrirsogn {
   line-height: 10px; }
 
@@ -104,5 +69,78 @@ header {
 .text__head {
   margin-left: 20px; }
 
-.button {
-}
+.card {
+  width: 100%;
+  min-width: 200px;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #eee;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); }
+  @media (min-width: 800px) {
+    .card {
+      display: flex; } }
+  .card__heading {
+    margin-bottom: 15px;
+    width: 100%;
+    font-family: Merriweather, georgia, serif;
+    font-size: 1.5rem;
+    word-break: break-word; }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; }
+    @media (min-width: 800px) {
+      .card__content {
+        align-items: flex-start; } }
+  .card__text {
+    margin-bottom: 30px; }
+  .card__img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 100%; }
+    @media (min-width: 800px) {
+      .card__img {
+        height: 100%;
+        min-width: 400px;
+        object-fit: cover; } }
+
+@media (min-width: 600px) {
+  .card--wide:hover {
+    background-color: #ddd;
+    transition: ease 500ms; } }
+
+.cardlist__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px; }
+
+.cardlist .card {
+  display: block;
+  height: 100%; }
+
+.cardlist__col {
+  padding: 10px; }
+  @media (min-width: 800px) {
+    .cardlist__col {
+      width: 50%; } }
+  .cardlist__col .card__content {
+    align-items: center; }
+
+    .kaup{
+      display: flex;
+      flex-flow: row;
+    }
+
+    .listi{
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .moreinfo{
+      border: 0;
+
+    }
