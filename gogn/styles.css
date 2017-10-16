@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/* setjum box-sizing: border-box; á allt */
-html {
-  /* stylelint-disable-line */
-  box-sizing: border-box; }
-
 *, *:after, *:before {
   /* stylelint-disable-line */
   box-sizing: inherit;
@@ -13,6 +8,7 @@ html {
 
 html {
   /* stylelint-disable-line */
+  box-sizing: border-box;
   margin-right: 20px;
   margin-left: 20px; }
 
@@ -20,57 +16,31 @@ html {
   html {
     margin: 0; } }
 
-img {
-  /* stylelint-disable-line */
-  max-width: 100%; }
+body {
+  max-width: 75em;
+  margin: 0 auto;
+  overflow-x: hidden; }
 
 main {
-  /* stylelint-disable-line */
   max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden; }
 
-/*sér um myndina og textann sem er á myndinni*/
-/* style fyrir quote í about */
 header {
   width: 100%;
   background-size: cover;
   background-position: 50% 50%;
   padding-top: 5em;
   margin-bottom: 2em;
-  min-height: 15em; }
+  min-height: 15em;
+  color: white; }
 
-.Navi {
-  display: flex;
-  background-color: #333;
-  justify-content: space-between;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  color: #FFFFFF;
-  opacity: 0.8;
-  z-index: 1;
-  color: white;
-  max-width: 1200px; }
-  .Navi__Title {
-    padding: 5px;
-    font-size: 1.5em;
-    font-family: 'Roboto Slab', serif; }
-  .Navi__buttons {
-    padding: 6px;
-    display: flex;
-    color: white; }
-    .Navi__buttons .Navi__buttons__kaupa {
-      width: 100%;
-      font-size: 1em;
-      overflow: initial; }
-    .Navi__buttons .Navi__buttons__um {
-      padding-right: 15px;
-      background-color: #333;
-      border: 1px solid #333; }
-    @media (max-width: 399px) {
-      .Navi__buttons .Navi__buttons__kaupa__sm {
-        display: none; } }
+img {
+  max-width: 100%; }
+
+.quote {
+  padding: 1.75em;
+  font-size: 1.5em; }
 
 .quote p {
   margin-left: 13px; }
@@ -88,34 +58,12 @@ header {
   position: sticky;
   top: 0; }
 
-/* CSS WITHOUT CLASS */
-body {
-  max-width: 75em;
-  margin: 0 auto;
-  overflow-x: hidden; }
+.bg-sub-img {
+  background-image: url("bg-subpage.jpg");
+  /* Header Mynd fyrir Forsíðu */ }
 
-/* BUTTON CSS */
-button {
-  /* Color Control */
-  background-color: #808080;
-  color: white;
-  /* Text Design */
-  font-size: 1.5em;
-  /* Button Design */
-  padding: 0.5em;
-  text-decoration: none;
-  border: none;
-  border-radius: 0.1em;
-  /* Button Location */
-  position: absolute;
-  top: 63%;
-  left: 45.9%; }
-
-button:hover {
-  /* Cursor Change */
-  cursor: pointer;
-  /* Color Change */
-  background-color: #A9A9A9; }
+.myndtext {
+  padding-left: 10px; }
 
 /* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
@@ -228,25 +176,6 @@ button:hover {
     }
 }
 */
-.button {
-  display: inline-block;
-  margin: 0;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 256px;
-  overflow: hidden;
-  color: #eee;
-  background-color: #666;
-  font-size: 1rem;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer; }
-  .button:hover {
-    color: #eee;
-    background-color: #333; }
-
 .button {
   display: inline-block;
   margin: 0;
