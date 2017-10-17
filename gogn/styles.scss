@@ -1,25 +1,24 @@
 @charset "UTF-8"; /* setjum box-sizing: border-box; á allt */
-$gutter: 20px;
-/* CSS WITHOUT CLASS - EFFECTS ALL HTML FILES */
+$gutter: 20px; /* CSS WITHOUT CLASS - EFFECTS ALL HTML FILES */
+
 html {
   /* stylelint-disable-line */
   box-sizing: border-box;
   margin-right: 20px;
   margin-left: 20px;
-}
-
-@media (min-width: 1200px) {
-  html {
+  @media (min-width: 1200px) {
     margin: 0;
   }
 }
 
-*,
-*:after,
-*:before {
-  /* stylelint-disable-line */
+*, *:after,*:before {
+
+  //stylelint-disable-line
+
   box-sizing: inherit;
-  /* fjarlægjum margin og padding */
+
+  // fjarlægjum margin og padding
+
   padding: 0;
   margin: 0;
 }
@@ -54,22 +53,22 @@ img {
 h3 {
   padding-top: 3em;
 }
-
 /* CSS WITH CLASS */
 /* QUOTE */
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
+
 .quote {
   padding: 1.2em;
   font-size: 1.5em;
 }
-
 /*style sem ýtir Quote í Aboute aðeins til hægri */
+
 .quote p {
   margin-left: 13px;
 }
-
 /* Index Header Image */
+
 .bg-img {
   /* Index Header Control */
   background-image: url("bg.jpg");
@@ -81,28 +80,29 @@ h3 {
   position: sticky;
   top: 0;
 }
-
 /* ABOUT HEADER IMAGE */
+
 .bg-sub-img {
   background-image: url("bg-subpage.jpg");
 }
+
 .ind {
   display: flex;
   flex-flow: column;
   margin: auto;
   text-align: center;
   padding-top: 33%;
+
   & .heading {
     padding: 0.1em;
     color: black;
   }
+
   & .mainbutt {
     background-color: #808080;
     color: white;
     font-size: 1.5em;
-    margin-top: 1em;
-    margin: auto;
-    margin-top: 1.7em;
+    margin: 1.7em auto auto;
     max-width: 5em;
   }
 }
@@ -111,6 +111,7 @@ h3 {
   padding-left: 10px;
 }
 /* EMERGENCY PADDING */
+
 .pad {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -119,14 +120,16 @@ h3 {
 .pad2 {
   padding-top: 1em;
 }
-.pad-left-header{
-  padding-left: 0.5em;
-}
-.more-to-left{
+
+.pad-left-header {
   padding-left: 0.5em;
 }
 
+.more-to-left {
+  padding-left: 0.5em;
+}
 /* QUOTE LOCATION */
+
 .flex-quote {
   display: flex;
   flex-wrap: nowrap;
@@ -134,7 +137,6 @@ h3 {
     flex-wrap: wrap;
   }
 }
-
 /* IMPORTS */
 @import "scss/grid";
 @import "scss/heading";
