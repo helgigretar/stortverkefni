@@ -32,6 +32,9 @@
             &:hover{
               background-color: #A9A9A9;
             }
+            @media (max-width: 400px) {
+                display: none;
+            }
         }
 
         .Navi__buttons__um {
