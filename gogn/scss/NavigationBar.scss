@@ -23,7 +23,7 @@
     &__buttons {
         padding: 5px;
         display: flex;
-        color: white;
+
 
         .Navi__buttons__kaupa {
             width: 100%;
@@ -35,11 +35,6 @@
             padding-right: 15px;
             background-color: black;
             border: 0;
-        }
-        @media (max-width: 399px) {
-            .Navi__buttons__kaupa__sm {
-                display: none;
-            }
         }
         @media (max-width: 399px) {
             .Navi__buttons__kaupa__sm {
