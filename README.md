@@ -25,25 +25,25 @@ halda utanum staðsetningu á hverju og einu SASS skjali (fyrir utan style.scss)
 
 -HÓPMEÐLIMIR-
 -Nr 1.
-Nafn: Guðlaugur Kjartan Þorgeirsson
-Kt: 140893-2269
-HÍ Notendanafn: gth143@hi.is
-Braut: Tölvunarfræði
+Nafn: Guðlaugur Kjartan Þorgeirsson.
+Kt: 140893-2269.
+HÍ Notendanafn: gth143@hi.is.
+Braut: Tölvunarfræði.
 Ár/Önn: 2 ár/3ja önn.
 Áhugamál: Þegar ég get, Tölvuleikir og Leiklist.
 
 -Nr 2.
 Nafn: Helgi Grétar Gunnarsson
-Kt: 050196-3489
-HÍ Notendanafn: hgg26@hi.is
-Braut: Tölvunarfræði
+Kt: 050196-3489.
+HÍ Notendanafn: hgg26@hi.is.
+Braut: Tölvunarfræði.
 Ár/Önn: 2 ár/3ja önn.
 Áhugamál: Ég hef ekki áhugamál, skólinn er líf mitt.
 
 -Nr 3.
-Nafn: Thomas Samúel Pálsson
-Kt: 061293-2219
-HÍ Notendanafn: tsp3@hi.is
-Braut: Hugbúnaðarbraut
+Nafn: Thomas Samúel Pálsson.
+Kt: 061293-2219.
+HÍ Notendanafn: tsp3@hi.is.
+Braut: Hugbúnaðarbraut.
 Ár/Önn: 2 ár/3ja önn.
 Áhugamál: Tölvuleikir.
