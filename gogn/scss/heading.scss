@@ -2,13 +2,10 @@
 .heading {
 
   width: 100%;
-  padding: 0;
   border: none;
 
   font-family: 'Roboto Slab';
   font-size: 2rem;
-  /* Color */
-  color: #000000;
 
   &--one {
     font-size: 3rem;
@@ -31,6 +28,8 @@
       text-align: center;
       position: absolute;
       top: 40%;
+      /* Color */
+      color: #000000;
     }
 
     &-two {
@@ -39,6 +38,8 @@
       text-align: center;
       position: absolute;
       top: 48%;
+      /* Color */
+      color: #000000;
     }
   }
 }

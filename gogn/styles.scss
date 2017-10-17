@@ -35,13 +35,13 @@ header {
   background-size: cover;
   background-position: 50% 50%;
   margin-bottom: 2em;
-  min-height: 15em;
+  min-height: 22em;
   color: white;
 }
 
 main {
   /* stylelint-disable-line */
-  max-width: 1200px;
+  max-width: 75em;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -52,10 +52,11 @@ img {
 }
 
 h3 {
-  padding-top: 5em;
+  padding-top: 3em;
   color: white;
 }
 
+/* CSS WITH CLASS */
 /* QUOTE */
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
@@ -63,12 +64,12 @@ h3 {
   padding: 1.75em;
   font-size: 1.5em; 
 }
+
 /*style sem ýtir Quote í Aboute aðeins til hægri */
 .quote p {
   margin-left: 13px;
 }
 
-/* CSS WITH CLASS */
 /* Index Header Image */
 .bg-img {
   /* Index Header Control */ 
@@ -84,11 +85,11 @@ h3 {
 
 /* ABOUT HEADER IMAGE */
 .bg-sub-img {
-  background-image: url("bg-subpage.jpg"); /* Header Mynd fyrir Forsíðu */
+  background-image: url("bg-subpage.jpg");
 }
 
-.myndtext{
-  padding-left:10px;
+.myndtext {
+  padding-left: 10px;
 }
 
 /* IMPORTS */
