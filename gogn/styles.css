@@ -348,7 +348,8 @@ li {
   display: flex;
   margin: auto;
   justify-content: center;
-  max-width: 10em; }
+  max-width: 18em;
+  margin-top: 1.5em; }
 
 .mybutt:hover {
   background-color: #333; }
