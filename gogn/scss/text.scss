@@ -1,12 +1,17 @@
+p{
+  font-family: 'open Sans';
+  background-color: yellow;
+}
 .text {
   &__fyrirsogn {
+
     padding-bottom: 1em;
     padding-left: 1em;
     padding-top: 1em;
   }
 
   &__p {
-    font-family: 'Open Sans';
+
     margin-bottom: 20px;
     margin-left: 2px;
     padding-left: 1em;
