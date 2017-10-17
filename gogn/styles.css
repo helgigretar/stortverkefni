@@ -7,8 +7,8 @@ html {
     html {
       margin: 0; } }
 
-*, *
-:after,
+*,
+*:after,
 *:before {
   box-sizing: inherit;
   padding: 0;
