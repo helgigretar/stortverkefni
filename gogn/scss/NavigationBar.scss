@@ -1,8 +1,9 @@
 .Navi {
     /* Design Control */
-    max-width: 1200px;
+    max-width: 75em;
     width: 100%;
     background-color: black;
+    background-size: cover;
     color: #FFFFFF;
     opacity: 0.9;
     /* Location Control */
@@ -29,6 +30,9 @@
             width: 100%;
             font-size: 1em;
             overflow: initial;
+            @media (max-width: 399px) {
+                display: none;
+            }
         }
 
         .Navi__buttons__um {
