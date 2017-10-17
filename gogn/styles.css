@@ -6,17 +6,12 @@ html {
   box-sizing: border-box;
   margin-right: 20px;
   margin-left: 20px; }
+  @media (min-width: 1200px) {
+    html {
+      margin: 0; } }
 
-@media (min-width: 1200px) {
-  html {
-    margin: 0; } }
-
-*,
-*:after,
-*:before {
-  /* stylelint-disable-line */
+*, *:after, *:before {
   box-sizing: inherit;
-  /* fjarlægjum margin og padding */
   padding: 0;
   margin: 0; }
 
@@ -132,15 +127,15 @@ h3 {
 
 /* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
 .text__fyrirsogn {
-  padding-left: 1em;
   padding-top: 1em;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  padding-left: 1em; }
 
 .text__p {
-  font-family: 'Open Sans';
+  padding-left: 1em;
   margin-bottom: 20px;
   margin-left: 2px;
-  padding-left: 1em; }
+  font-family: "Open Sans"; }
 
 .text__head {
   margin-left: 20px; }
@@ -191,15 +186,15 @@ h3 {
   /* Width */
   width: 100%;
   max-width: 256px;
-  /* Border */
-  border: none;
-  border-radius: 4px;
   /* Design Control */
   background-color: grey;
   margin: 0;
   padding: 10px 5px;
   display: inline-block;
   color: white;
+  /* Border */
+  border: none;
+  border-radius: 4px;
   /* Text Control */
   text-decoration: none;
   text-align: center;
