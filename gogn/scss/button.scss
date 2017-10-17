@@ -13,14 +13,13 @@
   /* Text Control */
   text-decoration: none;
   text-align: center;
-  color: white;
-  font-size: 1rem;
-  overflow: hidden;
+  transition: ease 1s;
+  cursor: pointer;
 
   &:hover {
+    transition: ease 1s;
     color: #eee;
-    cursor: pointer;
-    background-color: #A9A9A9;
+    background-color: black;
   }
 }
 

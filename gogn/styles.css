@@ -1,6 +1,11 @@
 @charset "UTF-8";
-/* setjum box-sizing: border-box; á allt */
-/* CSS WITHOUT CLASS - EFFECTS ALL HTML FILES */
+*, *:after, *:before {
+  /* stylelint-disable-line */
+  box-sizing: inherit;
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0; }
+
 html {
   /* stylelint-disable-line */
   box-sizing: border-box;
@@ -11,17 +16,13 @@ html {
   html {
     margin: 0; } }
 
-*,
-*:after,
-*:before {
-  /* stylelint-disable-line */
-  box-sizing: inherit;
-  /* fjarlægjum margin og padding */
-  padding: 0;
-  margin: 0; }
-
 body {
   max-width: 75em;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+main {
+  max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden; }
 
@@ -30,27 +31,11 @@ header {
   background-size: cover;
   background-position: 50% 50%;
   margin-bottom: 2em;
-  min-height: 15em;
-  color: white; }
-
-main {
-  /* stylelint-disable-line */
-  max-width: 75em;
-  margin: 0 auto;
-  overflow-x: hidden; }
+  min-height: 15em; }
 
 img {
-  /* stylelint-disable-line */
   max-width: 100%; }
 
-h3 {
-  padding-top: 5em;
-  color: white; }
-
-/* CSS WITH CLASS */
-/* QUOTE */
-/*sér um myndina og textann sem er á myndinni*/
-/* style fyrir quote í about */
 .quote {
   padding: 1.75em;
   font-size: 1.5em; }
@@ -59,7 +44,8 @@ h3 {
 .quote p {
   margin-left: 13px; }
 
-/* Index Header Image */
+/* INDEX CODE - Guðlaugur Kjartan Þorgeirsson */
+/* CSS WITH CLASS */
 .bg-img {
   /* Index Header Control */
   background-image: url("bg.jpg");
@@ -71,7 +57,6 @@ h3 {
   position: sticky;
   top: 0; }
 
-/* ABOUT HEADER IMAGE */
 .bg-sub-img {
   background-image: url("bg-subpage.jpg"); }
 
@@ -118,27 +103,32 @@ h3 {
   font-size: 2rem;
   /* HEADING STYLE FOR INDEX */ }
   .heading--one {
-    font-size: 3rem; }
+    font-size: 3rem;
+    padding-left: 1%;
+    color: white; }
   .heading--two {
     font-size: 2rem; }
   .heading--three {
     font-size: 1.5rem; }
-  .heading-index-one {
-    font-size: 2em;
-    /* Text Location */
-    text-align: center;
-    position: absolute;
-    top: 40%;
+  .heading-index {
     /* Color */
     color: #000000; }
-  .heading-index-two {
-    font-size: 3em;
-    /* Text Location */
-    text-align: center;
-    position: absolute;
-    top: 48%;
-    /* Color */
-    color: #000000; }
+    .heading-index-one {
+      font-size: 2em;
+      /* Text Location */
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      /* Color */
+      color: #000000; }
+    .heading-index-two {
+      font-size: 3em;
+      /* Text Location */
+      text-align: center;
+      position: absolute;
+      top: 48%;
+      /* Color */
+      color: #000000; }
 
 /* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
 .text__fyrirsogn {
@@ -198,21 +188,23 @@ h3 {
   /* Design Control */
   max-width: 1200px;
   width: 100%;
-  background-color: #333;
+  background-color: black;
   color: #FFFFFF;
-  opacity: 0.8;
+  opacity: 0.9;
   /* Location Control */
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1; }
+  position: fixed;
+  z-index: 1;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: 'Open Sans'; }
   .Navi__Title {
     padding: 5px;
     font-size: 1.5em;
     font-family: 'Roboto Slab', serif; }
   .Navi__buttons {
-    padding: 2px;
+    padding: 5px;
     display: flex;
     color: white; }
     .Navi__buttons .Navi__buttons__kaupa {
@@ -221,8 +213,11 @@ h3 {
       overflow: initial; }
     .Navi__buttons .Navi__buttons__um {
       padding-right: 15px;
-      background-color: #333;
-      border: 1px solid #333; }
+      background-color: black;
+      border: 0; }
+    @media (max-width: 399px) {
+      .Navi__buttons .Navi__buttons__kaupa__sm {
+        display: none; } }
     @media (max-width: 399px) {
       .Navi__buttons .Navi__buttons__kaupa__sm {
         display: none; } }
@@ -242,13 +237,12 @@ h3 {
   /* Text Control */
   text-decoration: none;
   text-align: center;
-  color: white;
-  font-size: 1rem;
-  overflow: hidden; }
+  transition: ease 1s;
+  cursor: pointer; }
   .button:hover {
+    transition: ease 1s;
     color: #eee;
-    cursor: pointer;
-    background-color: #A9A9A9; }
+    background-color: black; }
 
 /* BUTTON IN INDEX */
 .kaupa {
@@ -323,23 +317,10 @@ li {
 .mybutt {
   display: flex;
   margin: auto;
-  justify-content: center;
-  max-width: 16em;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #eee;
-  background-color: #666;
-  font-size: 1em;
-  width: 100%;
-  transition: 1s ease; }
+  justify-content: center; }
 
 .mybutt:hover {
-  background-color: #333;
-  transition: 1s ease;
-  cursor: pointer; }
+  background-color: #333; }
 
 /* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
@@ -368,4 +349,37 @@ li {
       width: 50%;
       width: 100%; } }
 
-/* This is going so great */
+.footer {
+  background-color: #333;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-top: 5em;
+  font-family: 'Open Sans';
+  display: flex;
+  flex-flow: column; }
+  .footer .upperfoot {
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 2em; }
+    .footer .upperfoot .up {
+      margin: auto;
+      margin-top: 0; }
+  .footer .lowerfoot {
+    display: flex;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 1em;
+    border-top: 2px solid grey; }
+    .footer .lowerfoot .down {
+      margin: auto;
+      color: grey; }
+  @media (max-width: 400px) {
+    .footer .upperfoot {
+      width: 100%; } }
+  @media (max-width: 600px) {
+    .footer .upperfoot {
+      width: 75%; } }
