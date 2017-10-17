@@ -1,26 +1,53 @@
 .button {
-  display: inline-block;
-
-  margin: 0;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
+  /* Width */
   width: 100%;
   max-width: 256px;
-
-  overflow: hidden;
-  color: #eee;
-  background-color: #666;
-  font-size: 1rem;
-
+  /* Border */
+  border: none;
+  border-radius: 4px;
+  /* Design Control */
+  background-color: #808080;
+  margin: 0;
+  padding: 10px 5px;
+  display: inline-block;
+  /* Text Control */
   text-decoration: none;
   text-align: center;
-
-  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  overflow: hidden;
 
   &:hover {
     color: #eee;
-    background-color: #333;
+    cursor: pointer;
+    background-color: #A9A9A9;
   }
+}
 
+/* BUTTON IN INDEX */
+.kaupa {
+  /* Color Control */
+  background-color: #808080;
+  color: white;
+  /* Text Design */
+  font-size: 1.5em;
+  /* Button Design */
+  padding: 0.5em;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.1em;
+  /* Button Location */
+  position: absolute;
+  top: 63%;
+  left: 45.9%;
+
+  &-bar {
+    display: flex;
+  }
+  &:hover {
+    /* Cursor Change */
+  cursor: pointer;
+  /* Color Change */
+  background-color: #A9A9A9;
+  }
 }
