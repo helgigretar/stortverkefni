@@ -89,6 +89,9 @@ h3 {
 .pad-left {
   padding: 0.5em; }
 
+.padding-more-toleft {
+  padding: 0.5em; }
+
 /* QUOTE LOCATION */
 .flex-quote {
   display: flex;
@@ -340,7 +343,8 @@ li {
 .mybutt {
   display: flex;
   margin: auto;
-  justify-content: center; }
+  justify-content: center;
+  max-width: 10em; }
 
 .mybutt:hover {
   background-color: #333; }
