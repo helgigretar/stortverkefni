@@ -52,7 +52,7 @@ h3 {
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 .quote {
-  padding: 1.75em;
+  padding: 1.2em;
   font-size: 1.5em; }
 
 /*style sem ýtir Quote í Aboute aðeins til hægri */
@@ -77,6 +77,25 @@ h3 {
 
 .myndtext {
   padding-left: 10px; }
+
+/* EMERGENCY PADDING */
+.pad {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.pad2 {
+  padding-top: 1em; }
+
+.pad-left {
+  padding: 0.5em; }
+
+/* QUOTE LOCATION */
+.flex-quote {
+  display: flex;
+  flex-wrap: nowrap; }
+  @media (max-width: 400px) {
+    .flex-quote {
+      flex-wrap: wrap; } }
 
 /* IMPORTS */
 /* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
@@ -363,5 +382,40 @@ li {
     .col-sm-6 {
       width: 50%;
       width: 100%; } }
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-top: 5em;
+  font-family: 'Open Sans';
+  display: flex;
+  flex-flow: column; }
+  .footer .upperfoot {
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 2em; }
+    .footer .upperfoot .up {
+      margin: auto;
+      margin-top: 0; }
+  .footer .lowerfoot {
+    display: flex;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 1em;
+    border-top: 2px solid grey; }
+    .footer .lowerfoot .down {
+      margin: auto;
+      color: grey; }
+  @media (max-width: 400px) {
+    .footer .upperfoot {
+      width: 100%; } }
+  @media (max-width: 600px) {
+    .footer .upperfoot {
+      width: 75%; } }
 
 /* This is going so great */

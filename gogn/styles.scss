@@ -61,7 +61,7 @@ h3 {
 /*sér um myndina og textann sem er á myndinni*/
 /* style fyrir quote í about */
 .quote {
-  padding: 1.75em;
+  padding: 1.2em;
   font-size: 1.5em; 
 }
 
@@ -90,6 +90,28 @@ h3 {
 
 .myndtext {
   padding-left: 10px;
+}
+/* EMERGENCY PADDING */
+.pad {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.pad2 {
+  padding-top: 1em;
+}
+
+.pad-left {
+  padding: 0.5em;
+}
+
+/* QUOTE LOCATION */
+.flex-quote {
+  display: flex;
+  flex-wrap: nowrap;
+  @media (max-width: 400px) {
+    flex-wrap: wrap;
+  }
 }
 
 /* IMPORTS */
