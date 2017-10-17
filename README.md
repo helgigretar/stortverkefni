@@ -8,6 +8,7 @@ síðum). Það mun taka þig á síðu sem inniheldur form sem þú þarft að 
 upplýsinga er t.d. nafn, kennitala og korta upplýsingar svo hægt sé að kaupa vöruna.
 
 -UPPSETNING-
+
 UPPSETNING VERKEFNIS-
 Við reyndum okkar besta að fara eftir þeim upplýsingum sem var gefið okkur í verkefnalýsingunni. Reynt var að láta vefsíðuna
 líta alveg eins út og í myndunum sem voru gefnar með.
@@ -24,6 +25,7 @@ Við ákváðum að nota almennt SASS í stað venjulegs CSS. SASS skjölin voru
 halda utanum staðsetningu á hverju og einu SASS skjali (fyrir utan style.scss).
 
 -HÓPMEÐLIMIR-
+
 -Nr 1.
 Nafn: Guðlaugur Kjartan Þorgeirsson.
 Kt: 140893-2269.
