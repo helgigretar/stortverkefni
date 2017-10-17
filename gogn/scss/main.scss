@@ -14,6 +14,14 @@ h1, h2, h3{
   width: 100%;
   height: 100vh;
 }
+@keyframes fader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .ind {
   display: flex;
   flex-flow: column;
@@ -33,6 +41,15 @@ h1, h2, h3{
     margin: auto;
     margin-top: 1.7em;
     max-width: 5em;
+    
+  }
+  & .heading--two{
+    opacity: 0;
+    animation: 2s ease 1s 1 forwards fader;
+  }
+  & .heading--two{
+    opacity: 0;
+    animation: 2s ease 2s 1 forwards fader;
   }
 }
 

@@ -26,8 +26,6 @@
   &__buttons {
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    z-index: 1;
     padding-left: 2em;
     padding-right: 2em;
     font-family: 'Open Sans';
@@ -38,7 +36,9 @@
         font-size: 1.5em;
         font-family: 'Roboto Slab';
     }
-
+    .Navi__buttons__kaupa{
+      padding-right: 15px;
+    }
     .Navi__buttons__um {
       padding-right: 15px;
       background-color: #000;
