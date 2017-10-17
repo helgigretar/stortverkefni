@@ -74,6 +74,24 @@ h3 {
 .bg-sub-img {
   background-image: url("bg-subpage.jpg"); }
 
+.ind {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  text-align: center;
+  padding-top: 33%; }
+  .ind .heading {
+    padding: 0.1em;
+    color: black; }
+  .ind .mainbutt {
+    background-color: #808080;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin: auto;
+    margin-top: 1.7em;
+    max-width: 5em; }
+
 .myndtext {
   padding-left: 10px; }
 
@@ -132,30 +150,13 @@ h3 {
   width: 100%;
   border: none;
   font-family: 'Roboto Slab';
-  font-size: 2rem;
-  /* HEADING STYLE FOR INDEX */ }
+  font-size: 2rem; }
   .heading--one {
     font-size: 3rem; }
   .heading--two {
     font-size: 2rem; }
   .heading--three {
     font-size: 1.5rem; }
-  .heading-index-one {
-    font-size: 2em;
-    /* Text Location */
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    /* Color */
-    color: #000000; }
-  .heading-index-two {
-    font-size: 3em;
-    /* Text Location */
-    text-align: center;
-    position: absolute;
-    top: 48%;
-    /* Color */
-    color: #000000; }
 
 /* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
 .text__fyrirsogn {
@@ -276,20 +277,6 @@ h3 {
     background-color: #333;
     transition: 1s ease; }
 
-.mainbutt {
-  /* Color Control */
-  background-color: #808080;
-  color: white;
-  /* Text Design */
-  font-size: 1.5em;
-  /* Button Location */
-  position: absolute;
-  top: 60%;
-  left: 44.5%;
-  width: 10%; }
-  .mainbutt-bar {
-    display: flex; }
-
 .kaup {
   display: flex;
   flex-flow: row;
@@ -340,7 +327,8 @@ li {
   display: flex;
   margin: auto;
   justify-content: center;
-  max-width: 10em; }
+  max-width: 18em;
+  margin-top: 1.5em; }
 
 .mybutt:hover {
   background-color: #333; }
