@@ -20,6 +20,7 @@ h1, h2, h3{
   margin: auto;
   text-align: center;
   padding-top: 33%;
+
   & .heading {
     padding: 0.1em;
     color: black;
@@ -79,11 +80,15 @@ h1, h2, h3{
     font-style: italic;
     padding-bottom: 1em;
   }
-  @media (max-width: 600px){
+  @media (max-width: 400px){
     flex-flow: column;
     & .celeb{
       width: 100%;
     }
+  }
+  @media (max-width: 600px){
+    flex-flow: row wrap;
+    width: 50%;
   }
 }
 

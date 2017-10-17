@@ -162,15 +162,16 @@ h3 {
     font-size: 1.5em; }
   .Navi__buttons {
     display: flex;
-    padding: 5px; }
-    .Navi__buttons .Navi__buttons__kaupa {
-      width: 100%;
-      font-size: 1em; }
-      .Navi__buttons .Navi__buttons__kaupa:hover {
-        background-color: #a9a9a9; }
-      @media (max-width: 400px) {
-        .Navi__buttons .Navi__buttons__kaupa {
-          display: none; } }
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: 'Open Sans'; }
+    .Navi__buttons__Title {
+      padding: 5px;
+      font-size: 1.5em;
+      font-family: 'Roboto Slab'; }
     .Navi__buttons .Navi__buttons__um {
       padding-right: 15px;
       background-color: #000;
@@ -392,11 +393,15 @@ h1, h2, h3 {
   .wannabe h2 {
     font-style: italic;
     padding-bottom: 1em; }
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
     .wannabe {
       flex-flow: column; }
       .wannabe .celeb {
         width: 100%; } }
+  @media (max-width: 600px) {
+    .wannabe {
+      flex-flow: row wrap;
+      width: 50%; } }
 
 .lastbutt {
   margin-top: 10%;
