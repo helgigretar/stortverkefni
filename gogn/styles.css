@@ -240,7 +240,10 @@ h3 {
       font-size: 1em;
       overflow: initial; }
       .Navi__buttons .Navi__buttons__kaupa:hover {
-        background-color: black; }
+        background-color: #A9A9A9; }
+      @media (max-width: 400px) {
+        .Navi__buttons .Navi__buttons__kaupa {
+          display: none; } }
     .Navi__buttons .Navi__buttons__um {
       padding-right: 15px;
       background-color: black;
