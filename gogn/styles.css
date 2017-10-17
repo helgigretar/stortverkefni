@@ -85,11 +85,11 @@ h3 {
 .pad2 {
   padding-top: 1em; }
 
-.pad-left {
-  padding: 0.5em; }
+.pad-left-header {
+  padding-left: 0.5em; }
 
-.padding-more-toleft {
-  padding: 0.5em; }
+.more-to-left {
+  padding-left: 0.5em; }
 
 /* QUOTE LOCATION */
 .flex-quote {
@@ -135,8 +135,10 @@ h3 {
   font-size: 2rem;
   /* HEADING STYLE FOR INDEX */ }
   .heading--one {
+    padding-left: 0.5em;
     font-size: 3rem; }
   .heading--two {
+    padding-left: 0.5em;
     font-size: 2rem; }
   .heading--three {
     font-size: 1.5rem; }
@@ -159,12 +161,15 @@ h3 {
 
 /* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
 .text__fyrirsogn {
-  line-height: 10px; }
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 .text__p {
   font-family: 'Open Sans';
   margin-bottom: 20px;
-  margin-left: 2px; }
+  margin-left: 2px;
+  padding-left: 1em; }
 
 .text__head {
   margin-left: 20px; }
