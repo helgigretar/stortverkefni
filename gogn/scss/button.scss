@@ -26,20 +26,3 @@
     transition: 1s ease;
   }
 }
-
-.mainbutt {
-  /* Color Control */
-  background-color: #808080;
-  color: white;
-  /* Text Design */
-  font-size: 1.5em;
-  /* Button Location */
-  position: absolute;
-  top: 60%;
-  left: 44.5%;
-  width: 10%;
-
-  &-bar {
-    display: flex;
-  }
-}
