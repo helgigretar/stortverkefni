@@ -44,8 +44,7 @@ img {
   max-width: 100%; }
 
 h3 {
-  padding-top: 3em;
-  color: white; }
+  padding-top: 3em; }
 
 /* CSS WITH CLASS */
 /* QUOTE */
@@ -235,10 +234,14 @@ h3 {
       width: 100%;
       font-size: 1em;
       overflow: initial; }
+      .Navi__buttons .Navi__buttons__kaupa:hover {
+        background-color: black; }
     .Navi__buttons .Navi__buttons__um {
       padding-right: 15px;
       background-color: black;
       border: 0; }
+      .Navi__buttons .Navi__buttons__um:hover {
+        background-color: black; }
     @media (max-width: 399px) {
       .Navi__buttons .Navi__buttons__kaupa__sm {
         display: none; } }
@@ -251,7 +254,7 @@ h3 {
   border: none;
   border-radius: 4px;
   /* Design Control */
-  background-color: #808080;
+  background-color: grey;
   margin: 0;
   padding: 10px 5px;
   display: inline-block;
@@ -261,35 +264,27 @@ h3 {
   text-align: center;
   color: white;
   font-size: 1rem;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: 1s ease; }
   .button:hover {
     color: #eee;
     cursor: pointer;
-    background-color: #A9A9A9; }
+    background-color: #333;
+    transition: 1s ease; }
 
-/* BUTTON IN INDEX */
-.kaupa {
+.mainbutt {
   /* Color Control */
   background-color: #808080;
   color: white;
   /* Text Design */
   font-size: 1.5em;
-  /* Button Design */
-  padding: 0.5em;
-  text-decoration: none;
-  border: none;
-  border-radius: 0.1em;
   /* Button Location */
   position: absolute;
-  top: 63%;
-  left: 45.9%; }
-  .kaupa-bar {
+  top: 60%;
+  left: 44.5%;
+  width: 10%; }
+  .mainbutt-bar {
     display: flex; }
-  .kaupa:hover {
-    /* Cursor Change */
-    cursor: pointer;
-    /* Color Change */
-    background-color: #A9A9A9; }
 
 .kaup {
   display: flex;
