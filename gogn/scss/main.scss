@@ -14,7 +14,7 @@ h1, h2, h3{
   width: 100%;
   height: 100vh;
 }
-@keyframes fader {
+@keyframes visible {
   0% {
     opacity: 0;
   }
@@ -41,15 +41,21 @@ h1, h2, h3{
     margin: auto;
     margin-top: 1.7em;
     max-width: 5em;
-    
+    &:hover {
+      background-color: #333;
+    }
   }
   & .heading--two{
     opacity: 0;
-    animation: 2s ease 1s 1 forwards fader;
+    animation: 2s ease 1s 1 forwards visible;
   }
-  & .heading--two{
+  & .heading--one{
     opacity: 0;
-    animation: 2s ease 2s 1 forwards fader;
+    animation: 2s ease 2s 1 forwards visible;
+  }
+  & a{
+    opacity: 0;
+    animation: 2s ease 3s 1 forwards visible;
   }
 }
 
