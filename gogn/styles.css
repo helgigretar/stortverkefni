@@ -1,9 +1,8 @@
 @charset "UTF-8";
 html {
-  /* stylelint-disable-line */
   box-sizing: border-box;
-  margin-right: 20px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-right: 20px; }
   @media (min-width: 1200px) {
     html {
       margin: 0; } }
@@ -83,17 +82,16 @@ h3 {
       flex-wrap: wrap; } }
 
 /* IMPORTS */
-/* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -10px;
   margin-bottom: 20px;
-  margin-left: -10px; }
+  margin-left: -10px;
+  margin-right: -10px; }
 
 .col {
-  padding-right: 20px / 2;
-  padding-left: 20px / 2; }
+  padding-left: 20px / 2;
+  padding-right: 20px / 2; }
   .col-12 {
     width: 100%; }
   .col-8 {
@@ -110,107 +108,92 @@ h3 {
       width: 50%;
       width: 100%; } }
 
-/* Þetta sass skjal sér um að stíla fyrirsagnirnar og er með Roboto Slab í font-family */
 .heading {
-  width: 100%;
-  border: none;
+  border: 0;
   font-family: 'Roboto Slab';
-  font-size: 2rem; }
+  font-size: 2rem;
+  width: 100%; }
   .heading--one {
-    padding-left: 0.5em;
-    font-size: 3rem; }
+    font-size: 3rem;
+    padding-left: .5em; }
   .heading--two {
-    padding-left: 0.5em;
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding-left: .5em; }
   .heading--three {
     font-size: 1.5rem; }
 
-/* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
 .text__fyrirsogn {
-  padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: 1em; }
+  padding-left: 1em;
+  padding-top: 1em; }
 
 .text__p {
-  padding-left: 1em;
+  font-family: 'Open Sans';
   margin-bottom: 20px;
   margin-left: 2px;
-  font-family: "Open Sans"; }
+  padding-left: 1em; }
 
 .text__head {
   margin-left: 20px; }
 
-.Navi {
-  position: fixed;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  max-width: 75em;
-  padding-right: 2em;
-  padding-left: 2em;
-  font-family: "Open Sans";
-  color: #fff;
+.navi {
   background-color: #000;
   background-size: cover;
-  opacity: 0.9;
-  justify-content: space-between; }
-  .Navi__Title {
-    padding: 5px;
-    font-family: "Roboto Slab";
-    font-size: 1.5em; }
-  .Navi__buttons {
+  color: #fff;
+  display: flex;
+  font-family: 'Open Sans';
+  justify-content: space-between;
+  max-width: 75em;
+  opacity: .9;
+  padding-left: 2em;
+  padding-right: 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+  .navi__Title {
+    font-family: 'Roboto Slab';
+    font-size: 1.5em;
+    padding: 5px; }
+  .navi__buttons {
     display: flex;
     justify-content: space-between;
     padding-left: 2em;
-    padding-right: 2em;
-    font-family: 'Open Sans'; }
-    .Navi__buttons__Title {
-      padding: 5px;
-      font-size: 1.5em;
-      font-family: 'Roboto Slab'; }
-    .Navi__buttons .Navi__buttons__kaupa {
-      padding-right: 15px; }
-    .Navi__buttons .Navi__buttons__um {
-      padding-right: 15px;
-      background-color: #000;
-      border: 0; }
-      .Navi__buttons .Navi__buttons__um:hover {
-        background-color: #000; }
-    @media (max-width: 399px) {
-      .Navi__buttons .Navi__buttons__kaupa__sm {
-        display: none; } }
+    padding-right: 2em; }
+  .navi .kaupabutt {
+    padding-right: 1em; }
+  .navi .umbutt {
+    background-color: #000;
+    border: 0;
+    padding-right: 15px; }
+    .navi .umbutt:hover {
+      background-color: #000; }
 
 .button {
-  /* Width */
-  width: 100%;
-  max-width: 256px;
-  /* Design Control */
-  background-color: grey;
-  margin: 0;
-  padding: 10px 5px;
-  display: inline-block;
-  color: white;
-  /* Border */
-  border: none;
+  background-color: #808080;
+  border: 0;
   border-radius: 4px;
-  /* Text Control */
-  text-decoration: none;
-  text-align: center;
-  color: white;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Open Sans';
   font-size: 1rem;
+  margin: 0;
+  max-width: 256px;
   overflow: hidden;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
   transition: 1s ease;
-  font-family: 'Open Sans'; }
+  width: 100%; }
   .button:hover {
+    background-color: #333;
     color: #eee;
     cursor: pointer;
-    background-color: #333;
     transition: 1s ease; }
 
 .kaup {
   display: flex;
   flex-flow: row;
-  font-family: "Open Sans"; }
+  font-family: 'Open Sans'; }
   @media (max-width: 400px) {
     .kaup {
       flex-flow: column; } }
@@ -219,18 +202,18 @@ h3 {
   list-style-type: none; }
 
 .moreinfo {
-  width: 100%;
   border: 0;
-  margin: 0 auto auto; }
+  margin: 0 auto auto;
+  width: 100%; }
 
 label {
   display: flex;
   flex-direction: column; }
 
 .spec {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin: 0 0 3%; }
   .spec input {
     width: 8%; }
@@ -242,12 +225,12 @@ label {
   margin-left: 9%; }
 
 input {
-  width: 100%;
-  padding: 1%; }
+  padding: 1%;
+  width: 100%; }
 
 select {
-  width: 100%;
-  padding: 1%; }
+  padding: 1%;
+  width: 100%; }
 
 li {
   margin-bottom: 4%;
@@ -255,25 +238,24 @@ li {
 
 .mybutt {
   display: flex;
-  margin: auto;
   justify-content: center;
-  max-width: 18em;
-  margin-top: 1.5em; }
+  margin: auto;
+  margin-top: 1.5em;
+  max-width: 18em; }
 
 .mybutt:hover {
   background-color: #333; }
 
-/* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -10px;
   margin-bottom: 20px;
-  margin-left: -10px; }
+  margin-left: -10px;
+  margin-right: -10px; }
 
 .col {
-  padding-right: 20px / 2;
-  padding-left: 20px / 2; }
+  padding-left: 20px / 2;
+  padding-right: 20px / 2; }
   .col-12 {
     width: 100%; }
   .col-8 {
@@ -292,32 +274,31 @@ li {
 
 .footer {
   background-color: #333;
-  color: white;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  margin-top: 5em;
-  font-family: 'Open Sans';
+  color: #fff;
   display: flex;
-  flex-flow: column; }
+  flex-flow: column;
+  font-family: 'Open Sans';
+  margin-top: 5em;
+  padding-bottom: 1em;
+  padding-top: 2em; }
   .footer .upperfoot {
-    text-align: center;
     display: flex;
     flex-flow: row;
-    width: 50%;
     margin: auto;
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    text-align: center;
+    width: 50%; }
     .footer .upperfoot .up {
-      margin: auto;
-      margin-top: 0; }
+      margin: 0 auto auto; }
   .footer .lowerfoot {
+    border-top: 2px solid #808080;
     display: flex;
     margin-left: 3em;
     margin-right: 3em;
-    padding-top: 1em;
-    border-top: 2px solid grey; }
+    padding-top: 1em; }
     .footer .lowerfoot .down {
-      margin: auto;
-      color: grey; }
+      color: #808080;
+      margin: auto; }
   @media (max-width: 400px) {
     .footer .upperfoot {
       width: 100%; } }
@@ -359,8 +340,7 @@ h3 {
     background-color: #808080;
     color: #fff;
     font-size: 1.5em;
-    margin: auto;
-    margin-top: 1.7em;
+    margin: 1.7em auto auto;
     max-width: 5em; }
     .ind .mainbutt:hover {
       background-color: #333; }

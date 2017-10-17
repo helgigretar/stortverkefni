@@ -1,16 +1,15 @@
-/* þetta sass skjal sér um að stíla meginmálið og meginmálið er skráð á font-family Open Sans */
 .text {
   &__fyrirsogn {
-    padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
+    padding-top: 1em;
   }
 
   &__p {
-    padding-left: 1em;
+    font-family: 'Open Sans';
     margin-bottom: 20px;
     margin-left: 2px;
-    font-family: "Open Sans";
+    padding-left: 1em;
   }
 
   &__head {

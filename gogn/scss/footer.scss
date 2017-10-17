@@ -1,45 +1,48 @@
-.footer{
-    background-color: #333;
-    color: white;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    margin-top: 5em;
-    font-family: 'Open Sans';
+.footer {
+  background-color: $color-darkgrey;
+  color: $color-white;
+  display: flex;
+  flex-flow: column;
+  font-family: 'Open Sans';
+  margin-top: 5em;
+  padding-bottom: 1em;
+  padding-top: 2em;
+
+  .upperfoot {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    margin: auto;
+    padding-bottom: 2em;
+    text-align: center;
+    width: 50%;
 
-    & .upperfoot{
-      text-align: center;
-      display: flex;
-      flex-flow: row;
-      width: 50%;
-      margin: auto;
-      padding-bottom: 2em;
-      & .up{
-        margin: auto;
-        margin-top: 0;
-      }
-    }
-
-    & .lowerfoot{
-      display: flex;
-      margin-left: 3em;
-      margin-right: 3em;
-      padding-top: 1em;
-      border-top: 2px solid grey;
-      & .down{
-        margin: auto;
-        color: grey;
-      }
-    }
-    @media (max-width: 400px){
-      & .upperfoot{
-        width: 100%;
-      }
-    }
-    @media (max-width: 600px){
-      & .upperfoot{
-        width: 75%;
-      }
+    .up {
+      margin: 0 auto auto;
     }
   }
+
+  .lowerfoot {
+    border-top: 2px solid $color-grey;
+    display: flex;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 1em;
+
+    .down {
+      color: $color-grey;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .upperfoot {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .upperfoot {
+      width: 75%;
+    }
+  }
+}

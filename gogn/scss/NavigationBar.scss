@@ -1,26 +1,22 @@
-.Navi {
-  //Design Control
-
-  position: fixed;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  max-width: 75em;
-  padding-right: 2em;
-  padding-left: 2em;
-  font-family: "Open Sans";
-  color: #fff;
-
-  //Loacation control
-  background-color: #000;
+.navi {
+  background-color: $color-black;
   background-size: cover;
-  opacity: 0.9;
+  color: $color-white;
+  display: flex;
+  font-family: 'Open Sans';
   justify-content: space-between;
+  max-width: 75em;
+  opacity: .9;
+  padding-left: 2em;
+  padding-right: 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 
   &__Title {
-    padding: 5px;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab';
     font-size: 1.5em;
+    padding: 5px;
   }
 
   &__buttons {
@@ -28,30 +24,19 @@
     justify-content: space-between;
     padding-left: 2em;
     padding-right: 2em;
-    font-family: 'Open Sans';
+  }
 
+  .kaupabutt {
+    padding-right: 1em;
+  }
 
-    &__Title {
-        padding: 5px;
-        font-size: 1.5em;
-        font-family: 'Roboto Slab';
-    }
-    .Navi__buttons__kaupa{
-      padding-right: 15px;
-    }
-    .Navi__buttons__um {
-      padding-right: 15px;
-      background-color: #000;
-      border: 0;
+  .umbutt {
+    background-color: $color-black;
+    border: 0;
+    padding-right: 15px;
 
-      &:hover {
-        background-color: #000;
-      }
-    }
-    @media (max-width: 399px) {
-      .Navi__buttons__kaupa__sm {
-        display: none;
-      }
+    &:hover {
+      background-color: $color-black;
     }
   }
 }

@@ -7,11 +7,9 @@ h2,
 h3 {
   font-family: 'Roboto Slab';
 }
-
 // Index Header Image
-
 .bg-img {
-// Index Header Control
+  // Index Header Control
   background-attachment: fixed;
   background-image: url('bg.jpg');
   // Image Control
@@ -46,8 +44,7 @@ h3 {
     background-color: $color-grey;
     color: $color-white;
     font-size: 1.5em;
-    margin: auto;
-    margin-top: 1.7em;
+    margin: 1.7em auto auto;
     max-width: 5em;
 
     &:hover {
@@ -70,7 +67,6 @@ h3 {
     opacity: 0;
   }
 }
-
 
 .mid {
   display: flex;
@@ -95,7 +91,6 @@ h3 {
     padding-left: 5%;
   }
 }
-
 
 .wannabe {
   display: flex;
@@ -123,7 +118,7 @@ h3 {
     padding-bottom: 1em;
   }
 
-  @media (max-width: 400px){
+  @media (max-width: 400px) {
     flex-flow: column;
 
     .celeb {
@@ -131,7 +126,7 @@ h3 {
     }
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     flex-flow: row wrap;
     width: 50%;
   }

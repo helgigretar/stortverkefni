@@ -1,7 +1,8 @@
 .kaup {
   display: flex;
   flex-flow: row;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
+
   @media (max-width: 400px) {
     flex-flow: column;
   }
@@ -12,9 +13,9 @@
 }
 
 .moreinfo {
-  width: 100%;
   border: 0;
   margin: 0 auto auto;
+  width: 100%;
 }
 
 label {
@@ -23,12 +24,12 @@ label {
 }
 
 .spec {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin: 0 0 3%;
 
-  & input {
+  input {
     width: 8%;
   }
 }
@@ -42,13 +43,13 @@ label {
 }
 
 input {
-  width: 100%;
   padding: 1%;
+  width: 100%;
 }
 
 select {
-  width: 100%;
   padding: 1%;
+  width: 100%;
 }
 
 li {
@@ -58,13 +59,14 @@ li {
 
 .mybutt {
   display: flex;
-  margin: auto;
   justify-content: center;
-  max-width: 18em;
+  margin: auto;
   margin-top: 1.5em;
+  max-width: 18em;
 }
 
 .mybutt:hover {
-  background-color: #333;
+  background-color: $color-darkgrey;
 }
-@import "scss/grid";
+
+@import 'scss/grid';

@@ -2,14 +2,14 @@
 $gutter: 20px;
 $color-black: #000;
 $color-grey: #808080;
+$color-lightgrey: #eee;
 $color-darkgrey: #333;
 $color-white: #fff;
 
 html {
-  /* stylelint-disable-line */
-  box-sizing: border-box;
-  margin-right: 20px;
+  box-sizing: border-box;  
   margin-left: 20px;
+  margin-right: 20px;
   @media (min-width: 1200px) {
     margin: 0;
   }

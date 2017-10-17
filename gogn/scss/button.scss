@@ -1,32 +1,25 @@
 .button {
-  /* Width */
-  width: 100%;
-  max-width: 256px;
-
-  /* Design Control */
-  background-color: grey;
-  margin: 0;
-  padding: 10px 5px;
-  display: inline-block;
-  color: white;
-
-  /* Border */
-  border: none;
+  background-color: $color-grey;
+  border: 0;
   border-radius: 4px;
-
-  /* Text Control */
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-size: 1rem;
-  overflow: hidden;
-  transition: 1s ease;
+  color: $color-white;
+  display: inline-block;
   font-family: 'Open Sans';
+  font-size: 1rem;
+  margin: 0;
+  max-width: 256px;
+  overflow: hidden;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: 1s ease;
+  width: 100%;
+
 
   &:hover {
-    color: #eee;
+    background-color: $color-darkgrey;
+    color: $color-lightgrey;
     cursor: pointer;
-    background-color: #333;
     transition: 1s ease;
   }
 }
