@@ -25,13 +25,12 @@
         padding: 5px;
         display: flex;
 
-
         .Navi__buttons__kaupa {
             width: 100%;
             font-size: 1em;
             overflow: initial;
-            @media (max-width: 399px) {
-                display: none;
+            &:hover{
+              background-color: black;
             }
         }
 
@@ -39,6 +38,9 @@
             padding-right: 15px;
             background-color: black;
             border: 0;
+            &:hover{
+              background-color: black;
+            }
         }
         @media (max-width: 399px) {
             .Navi__buttons__kaupa__sm {
