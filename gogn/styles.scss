@@ -11,7 +11,9 @@ html {
   }
 }
 
-*, *:after,*:before {
+*, *
+:after,
+*:before {
 
   //stylelint-disable-line
 
@@ -108,7 +110,6 @@ h3 {
 @import "scss/grid";
 @import "scss/heading";
 @import "scss/text";
-@import "scss/card";
 @import "scss/NavigationBar";
 @import "scss/button";
 @import "scss/info";

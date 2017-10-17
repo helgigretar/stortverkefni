@@ -1,7 +1,7 @@
 .kaup {
   display: flex;
   flex-flow: row;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   @media (max-width: 400px) {
     flex-flow: column;
   }
@@ -12,8 +12,8 @@
 }
 
 .moreinfo {
-  border: 0;
   width: 100%;
+  border: 0;
   margin: 0 auto auto;
 }
 
