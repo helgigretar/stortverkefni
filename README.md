@@ -1,8 +1,8 @@
 -KEYRSLA-
 Þú opnar verkefnið og færð þá upp INDEX (forsíðu) síðu. Á þeirri síðu sérðu meðmæli, upplýsingar um vöruna, upplýsingar um
-eigendur síðunar, linkur á UM vefsíðu, og kaupa takka. 
-*Ef þér langar að fræðast um vöruna þá skal ýta á UM, sem mun þá taka þig á UM síðuna. Hún inniheldur aðalega upplýsingar um 
-vöruna, en hú hefur einnig kaupa takka. 
+eigendur síðunar, linkur á UM vefsíðu, og kaupa takka.
+*Ef þér langar að fræðast um vöruna þá skal ýta á UM, sem mun þá taka þig á UM síðuna. Hún inniheldur aðalega upplýsingar um
+vöruna, en hú hefur einnig kaupa takka.
 *Ef þér langar að kaupa vöruna, þá geturðu ýtt á Kaupa takka á annaðhvort INDEX eða UM (það eru kaupa takkar staðsettir á báðum
 síðum). Það mun taka þig á síðu sem inniheldur form sem þú þarft að fylla út til þess að þú getur keypt vöruna. Meðal þessa
 upplýsinga er t.d. nafn, kennitala og korta upplýsingar svo hægt sé að kaupa vöruna.
@@ -17,11 +17,11 @@ MÖPPU SKIPTING -
 Möppu skiptinginn hjá okkur hefði mátt vera betri, þar sem við erum aðeins að notast á við eina grunn-möppu (gogn) og síðan
 eina möppu innan í henni (scss) til þess að halda utanum SASS skjölin okkar.
 
-CSS - 
+CSS -
 Commentað var við allt sem átti við. Varðani flest CSS, þá voru gerð sérstök SASS skjöl til þess að halda utanum kóðan.
 Það einfaldaði það að leita að hverju og einu CSS classi og tagi. Style.scss heldur utanum flest allan almenna CSS kóðann
 hjá okkur, og reyndum við að passa okkur á því að kommenta vel sérstaklega þar.
-Við ákváðum að nota almennt SASS í stað venjulegs CSS. SASS skjölin voru sett upp í sér möppu, þannig það var auðvelt að 
+Við ákváðum að nota almennt SASS í stað venjulegs CSS. SASS skjölin voru sett upp í sér möppu, þannig það var auðvelt að
 halda utanum staðsetningu á hverju og einu SASS skjali (fyrir utan style.scss).
 
 -HÓPMEÐLIMIR-
@@ -46,6 +46,6 @@ Braut: Tölvunarfræði.
 Nafn: Thomas Samúel Pálsson.
 Kt: 061293-2219.
 HÍ Notendanafn: tsp3@hi.is.
-Braut: Hugbúnaðarbraut.
+Braut: Hugbúnaðarverkfræði.
 Ár/Önn: 2 ár/3ja önn.
 Áhugamál: Tölvuleikir.
