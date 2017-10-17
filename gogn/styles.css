@@ -10,7 +10,9 @@ html {
     html {
       margin: 0; } }
 
-*, *:after, *:before {
+*, *
+:after,
+*:before {
   box-sizing: inherit;
   padding: 0;
   margin: 0; }
@@ -142,21 +144,21 @@ h3 {
 
 .Navi {
   position: fixed;
-  width: 100%;
   z-index: 1;
-  max-width: 75em;
   display: flex;
-  color: #fff;
+  width: 100%;
+  max-width: 75em;
   padding-right: 2em;
-  background-color: #000;
   padding-left: 2em;
   font-family: "Open Sans";
+  color: #fff;
+  background-color: #000;
   background-size: cover;
   opacity: 0.9;
   justify-content: space-between; }
   .Navi__Title {
     padding: 5px;
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab";
     font-size: 1.5em; }
   .Navi__buttons {
     display: flex;
@@ -210,7 +212,7 @@ h3 {
 .kaup {
   display: flex;
   flex-flow: row;
-  font-family: 'Open Sans'; }
+  font-family: "Open Sans"; }
   @media (max-width: 400px) {
     .kaup {
       flex-flow: column; } }
@@ -219,8 +221,8 @@ h3 {
   list-style-type: none; }
 
 .moreinfo {
-  border: 0;
   width: 100%;
+  border: 0;
   margin: 0 auto auto; }
 
 label {
