@@ -139,21 +139,23 @@ img {
   /* Design Control */
   max-width: 1200px;
   width: 100%;
-  background-color: #333;
+  background-color: black;
   color: #FFFFFF;
-  opacity: 0.8;
+  opacity: 0.9;
   /* Location Control */
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1; }
+  position: fixed;
+  z-index: 1;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: 'Open Sans'; }
   .Navi__Title {
     padding: 5px;
     font-size: 1.5em;
     font-family: 'Roboto Slab', serif; }
   .Navi__buttons {
-    padding: 2px;
+    padding: 5px;
     display: flex;
     color: white; }
     .Navi__buttons .Navi__buttons__kaupa {
@@ -162,8 +164,8 @@ img {
       overflow: initial; }
     .Navi__buttons .Navi__buttons__um {
       padding-right: 15px;
-      background-color: #333;
-      border: 1px solid #333; }
+      background-color: black;
+      border: 0; }
     @media (max-width: 399px) {
       .Navi__buttons .Navi__buttons__kaupa__sm {
         display: none; } }
@@ -182,10 +184,12 @@ img {
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
+  transition: ease 1s;
   cursor: pointer; }
   .button:hover {
+    transition: ease 1s;
     color: #eee;
-    background-color: #333; }
+    background-color: black; }
 
 .kaup {
   display: flex;
@@ -236,23 +240,10 @@ li {
 .mybutt {
   display: flex;
   margin: auto;
-  justify-content: center;
-  max-width: 16em;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #eee;
-  background-color: #666;
-  font-size: 1em;
-  width: 100%;
-  transition: 1s ease; }
+  justify-content: center; }
 
 .mybutt:hover {
-  background-color: #333;
-  transition: 1s ease;
-  cursor: pointer; }
+  background-color: #333; }
 
 /* Þetta skjal skilgreinir hvað dálkur er stór og hvað t.d. dálkar merkja */
 .row {

@@ -16,12 +16,13 @@
 
   text-decoration: none;
   text-align: center;
-
+  transition: ease 1s;
   cursor: pointer;
 
   &:hover {
+    transition: ease 1s;
     color: #eee;
-    background-color: #333;
+    background-color: black;
   }
 
 }

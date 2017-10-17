@@ -60,22 +60,9 @@ li {
   display: flex;
   margin: auto;
   justify-content: center;
-  max-width: 16em;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #eee;
-  background-color: #666;
-  font-size: 1em;
-  width: 100%;
-  transition: 1s ease;
 }
 
 .mybutt:hover {
   background-color: #333;
-  transition: 1s ease;
-  cursor: pointer;
 }
 @import "scss/grid";
