@@ -2,7 +2,6 @@
 .heading {
 
   width: 100%;
-  padding: 0;
   border: none;
 
   font-family: 'Roboto Slab';
@@ -10,8 +9,6 @@
 
   &--one {
     font-size: 3rem;
-    padding-left: 1%;
-    color: white;
   }
 
   &--two {
@@ -24,9 +21,7 @@
 
   /* HEADING STYLE FOR INDEX */
   &-index {
-    /* Color */
-    color: #000000;
-
+    
     &-one {
       font-size: 2em;
       /* Text Location */

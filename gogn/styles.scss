@@ -1,9 +1,22 @@
-
+@charset "UTF-8"; /* setjum box-sizing: border-box; á allt */
 $gutter: 20px;
+/* CSS WITHOUT CLASS - EFFECTS ALL HTML FILES */
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
-@charset "UTF-8";
+@media (min-width: 1200px) {
+  html {
+    margin: 0;
+  }
+}
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   /* stylelint-disable-line */
   box-sizing: inherit;
   /* fjarlægjum margin og padding */
@@ -11,42 +24,45 @@ $gutter: 20px;
   margin: 0;
 }
 
-html {
-  /* stylelint-disable-line */
-  box-sizing: border-box;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-  @media (min-width: 1200px) {
-    html {
-      margin: 0; }
-    }
-
 body {
   max-width: 75em;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow-x: hidden; }
 
 header {
   width: 100%;
   background-size: cover;
   background-position: 50% 50%;
   margin-bottom: 2em;
-  min-height: 15em;
+  min-height: 22em;
+  color: white;
+}
+
+main {
+  /* stylelint-disable-line */
+  max-width: 75em;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 img {
-  max-width: 100%; }
+  /* stylelint-disable-line */
+  max-width: 100%;
+}
 
+h3 {
+  padding-top: 3em;
+  color: white;
+}
+
+/* CSS WITH CLASS */
+/* QUOTE */
+/*sér um myndina og textann sem er á myndinni*/
+/* style fyrir quote í about */
 .quote {
-  padding: 1.75em;
-  font-size: 1.5em;
+  padding: 1.2em;
+  font-size: 1.5em; 
 }
 
 /*style sem ýtir Quote í Aboute aðeins til hægri */
@@ -54,10 +70,9 @@ img {
   margin-left: 13px;
 }
 
-/* INDEX CODE - Guðlaugur Kjartan Þorgeirsson */
-/* CSS WITH CLASS */
+/* Index Header Image */
 .bg-img {
-  /* Index Header Control */
+  /* Index Header Control */ 
   background-image: url("bg.jpg");
   /* Image Control */
   max-width: 75em;
@@ -67,20 +82,45 @@ img {
   position: sticky;
   top: 0;
 }
+
+/* ABOUT HEADER IMAGE */
 .bg-sub-img {
   background-image: url("bg-subpage.jpg");
 }
-.myndtext{
-  padding-left:10px;
+
+.myndtext {
+  padding-left: 10px;
+}
+/* EMERGENCY PADDING */
+.pad {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.pad2 {
+  padding-top: 1em;
+}
+
+.pad-left {
+  padding: 0.5em;
+}
+
+/* QUOTE LOCATION */
+.flex-quote {
+  display: flex;
+  flex-wrap: nowrap;
+  @media (max-width: 400px) {
+    flex-wrap: wrap;
+  }
 }
 
 /* IMPORTS */
-@import "scss/checkpic";
 @import "scss/grid";
 @import "scss/heading";
 @import "scss/text";
-@import "scss/card";
+@import "scss/card"; 
 @import "scss/NavigationBar";
 @import "scss/button";
 @import "scss/info";
 @import "scss/footer";
+/* This is going so great */
