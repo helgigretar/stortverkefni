@@ -1,0 +1,98 @@
+p{
+  font-family: 'Open Sans';
+}
+h1, h2, h3{
+  font-family: 'Roboto Slab';
+}
+/* Index Header Image */
+.bg-img {
+  /* Index Header Control */
+  background-image: url("bg.jpg");
+  background-attachment: fixed;
+  /* Image Control */
+  max-width: 75em;
+  width: 100%;
+  height: 100vh;
+}
+.ind {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  text-align: center;
+  padding-top: 33%;
+  & .heading {
+    padding: 0.1em;
+    color: black;
+  }
+  & .mainbutt {
+    background-color: #808080;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin: auto;
+    margin-top: 1.7em;
+    max-width: 5em;
+  }
+}
+
+
+.mid{
+  display: flex;
+  flex-flow: row wrap;
+  word-wrap: break-word;
+  & .checkimg{
+    width: 5%;
+    float: left;
+  }
+  & .midlist{
+    padding-top: 10%;
+    list-style: none;
+  }
+  & .disimg{
+    height: 100%;
+  }
+  & p{
+    padding-left: 5%;
+  }
+}
+
+
+.wannabe{
+  display: flex;
+  flex-flow: row;
+  margin-top: 10%;
+  & .celeb{
+    width: 33%;
+    text-align: center;
+  }
+
+  & .profile{
+    border-radius: 50%;
+    width: 75%;
+    padding-bottom: 6%;
+  }
+  & .bigname{
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  & h2{
+    font-style: italic;
+    padding-bottom: 1em;
+  }
+  @media (max-width: 600px){
+    flex-flow: column;
+    & .celeb{
+      width: 100%;
+    }
+  }
+}
+
+.lastbutt{
+  margin-top: 10%;
+  text-align: center;
+  & .mybutt{
+    max-width: 15%;
+    font-size: 1.5em;
+    margin-top: 0.7em;;
+  }
+}
