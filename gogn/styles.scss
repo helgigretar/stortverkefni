@@ -1,5 +1,9 @@
-@charset "UTF-8"; /* setjum box-sizing: border-box; á allt */
-$gutter: 20px; /* CSS WITHOUT CLASS - EFFECTS ALL HTML FILES */
+@charset "UTF-8";
+$gutter: 20px;
+$color-black: #000;
+$color-grey: #808080;
+$color-darkgrey: #333;
+$color-white: #fff;
 
 html {
   /* stylelint-disable-line */
