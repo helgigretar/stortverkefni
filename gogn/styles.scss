@@ -17,7 +17,7 @@ html {
   }
 }
 
-:*,
+*,
 *:after,
 *:before {
   box-sizing: inherit;
@@ -50,34 +50,13 @@ img {
   max-width: 100%;
 }
 
-h3 {
-  padding-top: 3em;
-}
 
-.quote {
-  font-size: 1.5em;
-  padding: 1.2em;
-
-  p {
-    margin-left: 13px;
-  }
-}
-
-.bg-sub-img {
-  background-image: url('bg-subpage.jpg');
-}
-
-
-.flex-quote {
-  display: flex;
-  flex-wrap: wrap;
-}
-
+@import 'scss/about';
+@import 'scss/button';
+@import 'scss/footer';
 @import 'scss/grid';
 @import 'scss/heading';
-@import 'scss/text';
+@import 'scss/kaup';
 @import 'scss/NavigationBar';
-@import 'scss/button';
-@import 'scss/info';
-@import 'scss/footer';
 @import 'scss/main';
+@import 'scss/text';

@@ -1,13 +1,33 @@
-p {
-  font-family: 'Open Sans';
-}
-
 .text {
-  font-family: 'Open Sans';
 
   &__p {
     margin-bottom: 20px;
     margin-left: 2px;
     padding-left: 1em;
   }
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Slab';
+}
+
+h3 {
+  font-family: 'Roboto Slab';
+  padding-top: 3em;
+}
+
+p {
+  font-family: 'Open Sans';
+}
+
+@media (max-width: 599px) {
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: .5em;
+  }
+
 }

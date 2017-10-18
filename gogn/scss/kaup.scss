@@ -1,7 +1,6 @@
 .kaup {
   display: flex;
   flex-flow: row;
-  font-family: 'Open Sans';
 
   @media (max-width: 400px) {
     flex-flow: column;
