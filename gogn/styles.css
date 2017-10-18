@@ -348,11 +348,6 @@ li {
     justify-content: center;
     padding-bottom: .5em;
     text-align: center; }
-  @media (max-width: 400px) {
-    .wannabe {
-      flex-flow: column nowrap; }
-      .wannabe .celeb {
-        width: 100%; } }
   @media (max-width: 600px) {
     .wannabe {
       flex-flow: row wrap; }
@@ -362,6 +357,11 @@ li {
         width: 50%; }
       .wannabe .bigname {
         font-size: .5em; } }
+  @media (max-width: 400px) {
+    .wannabe {
+      flex-flow: column nowrap; }
+      .wannabe .celeb {
+        width: 100%; } }
 
 .lastbutt {
   margin-top: 10%;
@@ -369,7 +369,10 @@ li {
   .lastbutt .mybutt {
     font-size: 1.5em;
     margin-top: .7em;
-    max-width: 15%; }
+    width: 17%; }
+    @media (max-width: 600px) {
+      .lastbutt .mybutt {
+        width: 40%; } }
 
 .text__p {
   margin-bottom: 20px;
