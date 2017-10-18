@@ -1,90 +1,92 @@
 <!doctype html>
 <html class="grid" lang="is">
-  <head>
-    <meta charset="utf-8">
-    <title>Kaupa</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="grid.css">
-  </head>
-  <body>
-    <main>
-      <div class="grid">
-        <nav Class="navi">
-          <h1 class="navi__Title">Fooþjónusta</h1>
-          <div class ="navi__buttons">
-            <a href="about.html" class="button umbutt">Um</a>
-            <a href="kaupa.html" class="button kaupabutt">Kaupa</a>
-          </div>
-        </nav>
-        <header class="bg-sub-img">
-          <h3 class="heading heading--one">Kaupa</h3>
-        </header>
-        <div class="info">
-          <form class="kaup">
-            <fieldset class="moreinfo col col-4 col-sm-6">
-              <legend class="heading heading--three">Persónuupplýsingar</legend>
-              <ul class="listi">
-                <li>
-                  <label for="nafn">Nafn:</label>
-                  <input type="text" id="nafn">
-                </li>
-                <li>
-                  <label for="kennitala">Kennitala:</label>
-                  <input type="tel" id="kennitala" placeholder="123456-7890" maxlength="10">
-                </li>
-                <li class="spec">
-                  <p>Kyn:</p>
-                </li>
-                  <li class="spec">
-                    <input type="radio" name="gender" id="gf" value="1">
-                    <label for="gf">Kona</label>
-                  </li>
-                  <li class="spec">
-                    <input type="radio" name="gender" id="gm" value="2">
-                    <label for="gm">Karl</label>
-                  </li>
-                  <li class="spec">
-                    <input type="radio" name="gender" id="ga" value="3">
-                    <label for="ga">Annað</label>
-                  </li>
-                <li>
-                  <label for="simi">Sími:</label>
-                  <input type="tel" id="simi" placeholder="+354 812 3456" maxlength="20">
-                </li>
-                <li>
-                  <label for="heimili">Heimilisfang:</label>
-                  <input type="text" id="heimili">
-                </li>
-                <li class="spec">
-                  <input type="checkbox" id="postlist" checked>
-                  <label for="postlist">Skrá mig á póstlista</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="moreinfo col col-4 col-sm-6">
-              <legend class="heading heading--three">Greiðsluupplýsingar</legend>
-              <ul class="listi">
-                <li>
-                  <label for="greidsla">Greiða með:</label>
-                  <select id="greidsla">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kaupa</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+  <main>
+    <div class="grid">
+      <nav Class="navi">
+        <h1 class="navi__Title">Fooþjónusta</h1>
+        <div class="navi__buttons">
+          <a href="about.html" class="button umbutt">Um</a>
+          <a href="kaupa.html" class="button kaupabutt">Kaupa</a>
+        </div>
+      </nav>
+      <header class="bg-sub-img">
+        <h3 class="heading heading--one">Kaupa</h3>
+      </header>
+      <div class="info">
+        <form class="kaup">
+          <fieldset class="moreinfo col col-4 col-sm-6">
+            <legend class="heading heading--three">Persónuupplýsingar</legend>
+            <ul class="listi">
+              <li>
+                <label for="nafn">Nafn:</label>
+                <input type="text" id="nafn">
+              </li>
+              <li>
+                <label for="kennitala">Kennitala:</label>
+                <input type="tel" id="kennitala" placeholder="123456-7890" maxlength="10">
+              </li>
+              <li class="spec">
+                <p>Kyn:</p>
+              </li>
+              <li class="spec">
+                <input type="radio" name="gender" id="gf" value="1">
+                <label for="gf">Kona</label>
+              </li>
+              <li class="spec">
+                <input type="radio" name="gender" id="gm" value="2">
+                <label for="gm">Karl</label>
+              </li>
+              <li class="spec">
+                <input type="radio" name="gender" id="ga" value="3">
+                <label for="ga">Annað</label>
+              </li>
+              <li>
+                <label for="simi">Sími:</label>
+                <input type="tel" id="simi" placeholder="+354 812 3456" maxlength="20">
+              </li>
+              <li>
+                <label for="heimili">Heimilisfang:</label>
+                <input type="text" id="heimili">
+              </li>
+              <li class="spec">
+                <input type="checkbox" id="postlist" checked>
+                <label for="postlist">Skrá mig á póstlista</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="moreinfo col col-4 col-sm-6">
+            <legend class="heading heading--three">Greiðsluupplýsingar</legend>
+            <ul class="listi">
+              <li>
+                <label for="greidsla">Greiða með:</label>
+                <select id="greidsla">
                     <option value="kredit">Kreditkorti</option>
                     <option value="milli">Millifærslu</option>
                     <option value="fee">Reiðufé</option>
                   </select>
-                </li>
-                <li>
-                  <label for="kortnafn">Nafn á korti:</label>
-                  <input type="text" id="kortnafn">
-                </li>
-                <li>
-                  <label for="kortnumer">Kortanúmer:</label>
-                  <input type="number" id="kortnumer" placeholder="5999-9999-9999-9999">
-                </li>
-                <p>Gildistími:</p>
-                <li class="spec">
-                  <label for="man" class="data">Mán</label>
-                  <select id="man" class="data">
+              </li>
+              <li>
+                <label for="kortnafn">Nafn á korti:</label>
+                <input type="text" id="kortnafn">
+              </li>
+              <li>
+                <label for="kortnumer">Kortanúmer:</label>
+                <input type="number" id="kortnumer" placeholder="5999-9999-9999-9999">
+              </li>
+              <p>Gildistími:</p>
+              <li class="spec">
+                <label for="man" class="data">Mán</label>
+                <select id="man" class="data">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -98,8 +100,8 @@
                     <option value="11">11</option>
                     <option value="12">12</option>
                   </select>
-                  <label for="ar" class="data">Ár</label>
-                  <select id="ar" class="data">
+                <label for="ar" class="data">Ár</label>
+                <select id="ar" class="data">
                     <option value="2017">2017</option>
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
@@ -108,28 +110,26 @@
               </li>
             </ul>
           </fieldset>
-          </form>
-          <button class="button mybutt">Panta</button>
+        </form>
+        <button class="button mybutt">Panta</button>
       </div>
     </div>
-    </main>
-  </body>
-  <footer class="footer">
-    <div class="upperfoot">
-      <p class="up">
-        Fooþjónustan<br>
-        123-4567
-      </p>
-      <p class="up">
-        Opið 12-13 alla daga<br>
-        Bargata 1<br>
-        900 Foobar
-      </p>
+  </main>
+</body>
+<footer class="footer">
+  <div class="upperfoot">
+    <p class="up">
+      Fooþjónustan<br> 123-4567
+    </p>
+    <p class="up">
+      Opið 12-13 alla daga<br> Bargata 1<br> 900 Foobar
+    </p>
   </div>
   <div class="lowerfoot">
     <p class="down">
       © Fooþjónustan 2017
     </p>
   </div>
-  </footer>
+</footer>
+
 </html>

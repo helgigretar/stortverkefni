@@ -1,4 +1,6 @@
 .text {
+  font-family: 'Open Sans';
+
   &__fyrirsogn {
     padding-bottom: 1em;
     padding-left: 1em;
@@ -6,13 +8,8 @@
   }
 
   &__p {
-    font-family: 'Open Sans';
     margin-bottom: 20px;
     margin-left: 2px;
     padding-left: 1em;
-  }
-
-  &__head {
-    margin-left: 20px;
   }
 }
