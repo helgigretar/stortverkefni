@@ -8,78 +8,87 @@ $color-white: #fff;
 
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans';
   margin-left: 20px;
   margin-right: 20px;
-
   @media (min-width: 1200px) {
     margin: 0;
+    font-family: 'open Sans';
   }
 }
 
-::*,
-*:after,
+*, *
+:after,
 *:before {
 
   //stylelint-disable-line
+
   box-sizing: inherit;
 
   // fjarlægjum margin og padding
-  margin: 0;
+
   padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0 auto;
   max-width: 75em;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 
 header {
-  background-position: 50% 50%;
+  width: 100%;
   background-size: cover;
-  color: $color-white;
+  background-position: 50% 50%;
   margin-bottom: 2em;
   min-height: 22em;
-  width: 100%;
+  color: white;
 }
 
 main {
-  margin: 0 auto;
+  /* stylelint-disable-line */
   max-width: 75em;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 
 img {
+  /* stylelint-disable-line */
   max-width: 100%;
 }
 
 h3 {
   padding-top: 3em;
 }
-
+/* CSS WITH CLASS */
+/* QUOTE */
+/*sér um myndina og textann sem er á myndinni*/
+/* style fyrir quote í about */
 
 .quote {
-  font-size: 1.5em;
   padding: 1.2em;
-
-  p {
-    margin-left: 13px;
-  }
+  font-size: 1.5em;
 }
+/*style sem ýtir Quote í Aboute aðeins til hægri */
+
+.quote p {
+  margin-left: 13px;
+}
+/* ABOUT HEADER IMAGE */
 
 .bg-sub-img {
-  background-image: url('bg-subpage.jpg');
+  background-image: url("bg-subpage.jpg");
 }
 
 
 .myndtext {
   padding-left: 10px;
 }
+/* EMERGENCY PADDING */
 
 .pad {
-  padding-bottom: 1em;
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .pad2 {
@@ -87,27 +96,27 @@ h3 {
 }
 
 .pad-left-header {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .more-to-left {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
+/* QUOTE LOCATION */
 
 .flex-quote {
   display: flex;
   flex-wrap: nowrap;
-
   @media (max-width: 400px) {
     flex-wrap: wrap;
   }
 }
-
-@import 'scss/grid';
-@import 'scss/heading';
-@import 'scss/text';
-@import 'scss/NavigationBar';
-@import 'scss/button';
-@import 'scss/info';
-@import 'scss/footer';
-@import 'scss/main';
+/* IMPORTS */
+@import "scss/grid";
+@import "scss/heading";
+@import "scss/text";
+@import "scss/NavigationBar";
+@import "scss/button";
+@import "scss/info";
+@import "scss/footer";
+@import "scss/main";

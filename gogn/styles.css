@@ -5,10 +5,11 @@ html {
   margin-right: 20px; }
   @media (min-width: 1200px) {
     html {
-      margin: 0; } }
+      margin: 0;
+      font-family: 'open Sans'; } }
 
-*,
-*:after,
+*, *
+:after,
 *:before {
   box-sizing: inherit;
   padding: 0;
@@ -110,9 +111,9 @@ h3 {
 
 .heading {
   border: 0;
-  font-family: 'Roboto Slab';
   font-size: 2rem;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Roboto Slab'; }
   .heading--one {
     font-size: 3rem;
     padding-left: .5em; }
@@ -122,19 +123,19 @@ h3 {
   .heading--three {
     font-size: 1.5rem; }
 
-.text__fyrirsogn {
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-top: 1em; }
+p {
+  font-family: 'Open Sans'; }
 
-.text__p {
-  font-family: 'Open Sans';
-  margin-bottom: 20px;
-  margin-left: 2px;
-  padding-left: 1em; }
-
-.text__head {
-  margin-left: 20px; }
+.text {
+  font-family: 'Open Sans'; }
+  .text__fyrirsogn {
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-top: 1em; }
+  .text__p {
+    margin-bottom: 20px;
+    margin-left: 2px;
+    padding-left: 1em; }
 
 .navi {
   background-color: #000;
