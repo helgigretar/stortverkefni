@@ -70,11 +70,7 @@ h3 {
 
 .flex-quote {
   display: flex;
-  flex-wrap: nowrap;
-
-  @media (max-width: 400px) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 
 @import 'scss/grid';
